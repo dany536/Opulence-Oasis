@@ -1,13 +1,28 @@
-import {useState} from 'react'
+import { useState } from 'react'
 import React from 'react'
 import { ChevronDown, Copy, ArrowRight } from 'lucide-react'
+import { motion } from 'framer-motion';
+import Safari from '../../assets/test.png'
+
+const slides = [
+  { image: 'https://assets-global.website-files.com/6583d18e043fa866285fce1c/65e9c76b548876efb6590467_Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Luxury%20%20(1).jpg' },
+  { image: 'https://assets-global.website-files.com/6583d18e043fa866285fce1c/65e9cbbb29280e17bb03a1a6_Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Luxury%20%20(3)%20(1).jpg' },
+  { image: 'https://assets-global.website-files.com/6583d18e043fa866285fce1c/65e9cca62e0c8a323cd03ec6_Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Luxury%20%20(4)%20(1).jpg' },
+  { image: 'https://assets-global.website-files.com/6583d18e043fa866285fce1c/65e9c707891fce2e5fa324da_Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Luxury%20%20(2)%20(1).jpg' },
+  { image: 'https://assets-global.website-files.com/6583d18e043fa866285fce1c/65e9c697f9e2f1b6ccf71e78_Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Luxury%20%20(1).jpg' },
+  { image: 'https://assets-global.website-files.com/6583d18e043fa866285fce1c/65e9c76b548876efb6590467_Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Luxury%20%20(1).jpg' },
+  { image: 'https://assets-global.website-files.com/6583d18e043fa866285fce1c/65e9cbbb29280e17bb03a1a6_Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Luxury%20%20(3)%20(1).jpg' },
+  { image: 'https://assets-global.website-files.com/6583d18e043fa866285fce1c/65e9cca62e0c8a323cd03ec6_Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Luxury%20%20(4)%20(1).jpg' },
+  { image: 'https://assets-global.website-files.com/6583d18e043fa866285fce1c/65e9c707891fce2e5fa324da_Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Luxury%20%20(2)%20(1).jpg' },
+  { image: 'https://assets-global.website-files.com/6583d18e043fa866285fce1c/65e9c697f9e2f1b6ccf71e78_Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Luxury%20%20(1).jpg' },
+];
 
 export default function home() {
 
   const [travel, setTravel] = useState(false);
-  const[realEstate, setRealEstate] = React.useState(false);
-  const[concierge, setConcierge] = React.useState(false);
-  const[safari, setSafari] = React.useState(true);
+  const [realEstate, setRealEstate] = React.useState(false);
+  const [concierge, setConcierge] = React.useState(false);
+  const [safari, setSafari] = React.useState(true);
 
   const travelfn = () => {
     setTravel(true)
@@ -36,6 +51,9 @@ export default function home() {
     setConcierge(false)
     setRealEstate(true)
   }
+
+  // Duplicate the slides array to ensure seamless looping
+  const duplicatedSlides = [...slides, ...slides, ...slides, ...slides]
 
   return (
     <>
@@ -100,11 +118,11 @@ export default function home() {
 
       <section>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-xl text-center mb-20">
-          <h2 className="mt-6 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-            Featured Properties
-          </h2>
-        </div>
+          <div className="mx-auto max-w-xl text-center mb-20">
+            <h2 className="mt-6 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+              Featured Properties
+            </h2>
+          </div>
 
         </div>
       </section>
@@ -157,35 +175,35 @@ export default function home() {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 xl:mt-12 xl:grid-cols-3">
-                
+
               <div className="p-8 bg-white rounded-lg space-y-3 transition duration-500 ease-in-out hover:shadow-lg hover:scale-105">
-                    <span className="inline-block w-[60px] h-[60px] rounded-full bg-gray-100 p-5 text-black">
-                    <img src="https://assets-global.website-files.com/6583d18e043fa866285fce1c/6583d18e043fa866285fcef1_Passport.svg" alt="" />
-                    </span>
-                    <h1 className="pt-5 text-xl font-semibold capitalize text-black">Concierge</h1>
-                    <p className="text-basic text-gray-500">
-                      We offer an exquistite range of experiences, ensuring every moment of your journey is nothing short of extraordinary
-                    </p>
-              </div>
-                
-              <div className="p-8 bg-white rounded-lg space-y-3 transition duration-500 ease-in-out hover:shadow-lg hover:scale-105">
-                    <span className="inline-block w-[60px] h-[60px] rounded-full bg-gray-100 p-5 text-black">
-                    <img src="https://assets-global.website-files.com/6583d18e043fa866285fce1c/6583d18e043fa866285fcee1_Deals.svg" />
-                    </span>
-                    <h1 className="pt-5 text-xl font-semibold capitalize text-black">Real Estate</h1>
-                    <p className="text-basic text-gray-500">
-                      An exclusive collection of Kenaya's most prestigious properties available for rent & sale offering comfort
-                    </p>
+                <span className="inline-block w-[60px] h-[60px] rounded-full bg-gray-100 p-5 text-black">
+                  <img src="https://assets-global.website-files.com/6583d18e043fa866285fce1c/6583d18e043fa866285fcef1_Passport.svg" alt="" />
+                </span>
+                <h1 className="pt-5 text-xl font-semibold capitalize text-black">Concierge</h1>
+                <p className="text-basic text-gray-500">
+                  We offer an exquistite range of experiences, ensuring every moment of your journey is nothing short of extraordinary
+                </p>
               </div>
 
               <div className="p-8 bg-white rounded-lg space-y-3 transition duration-500 ease-in-out hover:shadow-lg hover:scale-105">
                 <span className="inline-block w-[60px] h-[60px] rounded-full bg-gray-100 p-5 text-black">
-                    <img src="https://assets-global.website-files.com/6583d18e043fa866285fce1c/6583d18e043fa866285fcf06_Case.svg" />
-                    </span>
-                    <h1 className="pt-5 text-xl font-semibold capitalize text-black">Travel</h1>
-                    <p className="text-basic text-gray-500">
-                      Meticulous collection of Africa's most exclusive boutique hotels, safari lodes & camps & holiday homes
-                    </p>
+                  <img src="https://assets-global.website-files.com/6583d18e043fa866285fce1c/6583d18e043fa866285fcee1_Deals.svg" />
+                </span>
+                <h1 className="pt-5 text-xl font-semibold capitalize text-black">Real Estate</h1>
+                <p className="text-basic text-gray-500">
+                  An exclusive collection of Kenaya's most prestigious properties available for rent & sale offering comfort
+                </p>
+              </div>
+
+              <div className="p-8 bg-white rounded-lg space-y-3 transition duration-500 ease-in-out hover:shadow-lg hover:scale-105">
+                <span className="inline-block w-[60px] h-[60px] rounded-full bg-gray-100 p-5 text-black">
+                  <img src="https://assets-global.website-files.com/6583d18e043fa866285fce1c/6583d18e043fa866285fcf06_Case.svg" />
+                </span>
+                <h1 className="pt-5 text-xl font-semibold capitalize text-black">Travel</h1>
+                <p className="text-basic text-gray-500">
+                  Meticulous collection of Africa's most exclusive boutique hotels, safari lodes & camps & holiday homes
+                </p>
               </div>
             </div>
 
@@ -209,181 +227,181 @@ export default function home() {
             <p className="mx-auto btn cursor-pointer" onClick={safarifn}>SAFARI CAMPS</p>
           </div>
 
-          <hr className='p-5'/>
+          <hr className='p-5' />
 
-          {travel ? 
+          {travel ?
             <div className="grid grid-cols-3">
 
-                    <div className="rounded-md">
-                      <div className="w-[300px] rounded-md border">
-                        <img
-                          src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
-                          alt="Laptop"
-                          className="h-[200px] w-full rounded-t-md object-cover"
-                        />
-                        <div className="p-4">
-                          <h1 className="inline-flex items-center text-lg font-semibold">
-                            TRAVEL &nbsp;
-                          </h1>
-                          <p className="mt-3 text-sm text-gray-600">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
-                          </p>
-                          <button
-                            type="button"
-                            className="mt-4 w-full rounded-sm bg-black px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-                          >
-                            Read
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-        
-                    <div className="rounded-md"></div>
-                    <div className="rounded-md"></div>
-            </div>
-          : null}
+              <div className="rounded-md">
+                <div className="w-[300px] rounded-md border">
+                  <img
+                    src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+                    alt="Laptop"
+                    className="h-[200px] w-full rounded-t-md object-cover"
+                  />
+                  <div className="p-4">
+                    <h1 className="inline-flex items-center text-lg font-semibold">
+                      TRAVEL &nbsp;
+                    </h1>
+                    <p className="mt-3 text-sm text-gray-600">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
+                    </p>
+                    <button
+                      type="button"
+                      className="mt-4 w-full rounded-sm bg-black px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                    >
+                      Read
+                    </button>
+                  </div>
+                </div>
+              </div>
 
-          {realEstate ? 
+              <div className="rounded-md"></div>
+              <div className="rounded-md"></div>
+            </div>
+            : null}
+
+          {realEstate ?
             <div className="grid grid-cols-3">
 
-                    <div className="rounded-md">
-                      <div className="w-[300px] rounded-md border">
-                        <img
-                          src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
-                          alt="Laptop"
-                          className="h-[200px] w-full rounded-t-md object-cover"
-                        />
-                        <div className="p-4">
-                          <h1 className="inline-flex items-center text-lg font-semibold">
-                            REAL ESTATE &nbsp;
-                          </h1>
-                          <p className="mt-3 text-sm text-gray-600">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
-                          </p>
-                          <button
-                            type="button"
-                            className="mt-4 w-full rounded-sm bg-black px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-                          >
-                            Read
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-        
-                    <div className="rounded-md"></div>
-                    <div className="rounded-md"></div>
-            </div>
-          : null}
+              <div className="rounded-md">
+                <div className="w-[300px] rounded-md border">
+                  <img
+                    src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+                    alt="Laptop"
+                    className="h-[200px] w-full rounded-t-md object-cover"
+                  />
+                  <div className="p-4">
+                    <h1 className="inline-flex items-center text-lg font-semibold">
+                      REAL ESTATE &nbsp;
+                    </h1>
+                    <p className="mt-3 text-sm text-gray-600">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
+                    </p>
+                    <button
+                      type="button"
+                      className="mt-4 w-full rounded-sm bg-black px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                    >
+                      Read
+                    </button>
+                  </div>
+                </div>
+              </div>
 
-          {concierge ? 
+              <div className="rounded-md"></div>
+              <div className="rounded-md"></div>
+            </div>
+            : null}
+
+          {concierge ?
             <div className="grid grid-cols-3">
 
-                    <div className="rounded-md">
-                      <div className="w-[300px] rounded-md border">
-                        <img
-                          src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
-                          alt="Laptop"
-                          className="h-[200px] w-full rounded-t-md object-cover"
-                        />
-                        <div className="p-4">
-                          <h1 className="inline-flex items-center text-lg font-semibold">
-                            CONCIERGE &nbsp;
-                          </h1>
-                          <p className="mt-3 text-sm text-gray-600">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
-                          </p>
-                          <button
-                            type="button"
-                            className="mt-4 w-full rounded-sm bg-black px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-                          >
-                            Read
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-        
-                    <div className="rounded-md"></div>
-                    <div className="rounded-md"></div>
-            </div>
-          : null}
+              <div className="rounded-md">
+                <div className="w-[300px] rounded-md border">
+                  <img
+                    src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+                    alt="Laptop"
+                    className="h-[200px] w-full rounded-t-md object-cover"
+                  />
+                  <div className="p-4">
+                    <h1 className="inline-flex items-center text-lg font-semibold">
+                      CONCIERGE &nbsp;
+                    </h1>
+                    <p className="mt-3 text-sm text-gray-600">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
+                    </p>
+                    <button
+                      type="button"
+                      className="mt-4 w-full rounded-sm bg-black px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                    >
+                      Read
+                    </button>
+                  </div>
+                </div>
+              </div>
 
-          {safari ? 
+              <div className="rounded-md"></div>
+              <div className="rounded-md"></div>
+            </div>
+            : null}
+
+          {safari ?
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 max-w-6xl mx-auto">
 
               <div className="rounded-2xl p-4 border-2 mx-auto transition duration-500 ease-in-out hover:shadow-xl hover:scale-105">
-                      <div className="w-[300px]">
-                        <img
-                          src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
-                          alt="Laptop"
-                          className="h-[200px] w-full rounded-2xl object-cover "
-                        />
-                        <div className="p-4">
-                          <h1 className="inline-flex items-center text-xl font-semibold">
-                            The Sanctuary At Ol Lentille &nbsp;
-                          </h1>
-                          <p className="mt-3 text-sm text-gray-600">
-                            One of Kenya's most exclusive lodge's. Nestled within a private conservancy, the lodge offers a unique blend of luxury, privacy, and sustainability. Pack your bags, embrace the local culture, and immerse yourself in the enchanting and relaxing era.
-                          </p>
-                          <hr className='my-5' />
-                          <button
-                            type="button"
-                            className="w-full border-2  rounded-md mx-auto px-2 py-1.5 text-sm font-base text-black hover:shadow-lg transition duration-500 hover:bg-[#081C3A] hover:text-white">
-                            DETAILS
-                          </button>
-                        </div>
-                      </div>
-              </div>
-        
-              <div className="rounded-2xl p-4 border-2 mx-auto transition duration-500 ease-in-out hover:shadow-xl hover:scale-105">
-                      <div className="w-[300px]">
-                        <img
-                          src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
-                          alt="Laptop"
-                          className="h-[200px] w-full rounded-2xl object-cover"
-                        />
-                        <div className="p-4">
-                          <h1 className="inline-flex items-center text-xl font-semibold">
-                            The Sanctuary At Ol Lentille &nbsp;
-                          </h1>
-                          <p className="mt-3 text-sm text-gray-600">
-                            One of Kenya's most exclusive lodge's. Nestled within a private conservancy, the lodge offers a unique blend of luxury, privacy, and sustainability. Pack your bags, embrace the local culture, and immerse yourself in the enchanting and relaxing era.
-                          </p>
-                          <hr className='my-5' />
-                          <button
-                            type="button"
-                            className="w-full border-2  rounded-md mx-auto px-2 py-1.5 text-sm font-base text-black hover:shadow-lg transition duration-500 hover:bg-[#081C3A] hover:text-white">
-                            DETAILS
-                          </button>
-                        </div>
-                      </div>
+                <div className="w-[300px]">
+                  <img
+                    src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+                    alt="Laptop"
+                    className="h-[200px] w-full rounded-2xl object-cover "
+                  />
+                  <div className="p-4">
+                    <h1 className="inline-flex items-center text-xl font-semibold">
+                      The Sanctuary At Ol Lentille &nbsp;
+                    </h1>
+                    <p className="mt-3 text-sm text-gray-600">
+                      One of Kenya's most exclusive lodge's. Nestled within a private conservancy, the lodge offers a unique blend of luxury, privacy, and sustainability. Pack your bags, embrace the local culture, and immerse yourself in the enchanting and relaxing era.
+                    </p>
+                    <hr className='my-5' />
+                    <button
+                      type="button"
+                      className="w-full border-2  rounded-md mx-auto px-2 py-1.5 text-sm font-base text-black hover:shadow-lg transition duration-500 hover:bg-[#081C3A] hover:text-white">
+                      DETAILS
+                    </button>
+                  </div>
+                </div>
               </div>
 
               <div className="rounded-2xl p-4 border-2 mx-auto transition duration-500 ease-in-out hover:shadow-xl hover:scale-105">
-                      <div className="w-[300px]">
-                        <img
-                          src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
-                          alt="Laptop"
-                          className="h-[200px] w-full rounded-2xl object-cover"
-                        />
-                        <div className="p-4">
-                          <h1 className="inline-flex items-center text-xl font-semibold">
-                            The Sanctuary At Ol Lentille &nbsp;
-                          </h1>
-                          <p className="mt-3 text-sm text-gray-600">
-                            One of Kenya's most exclusive lodge's. Nestled within a private conservancy, the lodge offers a unique blend of luxury, privacy, and sustainability. Pack your bags, embrace the local culture, and immerse yourself in the enchanting and relaxing era.
-                          </p>
-                          <hr className='my-5' />
-                          <button
-                            type="button"
-                            className="w-full border-2  rounded-md mx-auto px-2 py-1.5 text-sm font-base text-black hover:shadow-lg transition duration-500 hover:bg-[#081C3A] hover:text-white">
-                            DETAILS
-                          </button>
-                        </div>
-                      </div>
+                <div className="w-[300px]">
+                  <img
+                    src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+                    alt="Laptop"
+                    className="h-[200px] w-full rounded-2xl object-cover"
+                  />
+                  <div className="p-4">
+                    <h1 className="inline-flex items-center text-xl font-semibold">
+                      The Sanctuary At Ol Lentille &nbsp;
+                    </h1>
+                    <p className="mt-3 text-sm text-gray-600">
+                      One of Kenya's most exclusive lodge's. Nestled within a private conservancy, the lodge offers a unique blend of luxury, privacy, and sustainability. Pack your bags, embrace the local culture, and immerse yourself in the enchanting and relaxing era.
+                    </p>
+                    <hr className='my-5' />
+                    <button
+                      type="button"
+                      className="w-full border-2  rounded-md mx-auto px-2 py-1.5 text-sm font-base text-black hover:shadow-lg transition duration-500 hover:bg-[#081C3A] hover:text-white">
+                      DETAILS
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div className="rounded-2xl p-4 border-2 mx-auto transition duration-500 ease-in-out hover:shadow-xl hover:scale-105">
+                <div className="w-[300px]">
+                  <img
+                    src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+                    alt="Laptop"
+                    className="h-[200px] w-full rounded-2xl object-cover"
+                  />
+                  <div className="p-4">
+                    <h1 className="inline-flex items-center text-xl font-semibold">
+                      The Sanctuary At Ol Lentille &nbsp;
+                    </h1>
+                    <p className="mt-3 text-sm text-gray-600">
+                      One of Kenya's most exclusive lodge's. Nestled within a private conservancy, the lodge offers a unique blend of luxury, privacy, and sustainability. Pack your bags, embrace the local culture, and immerse yourself in the enchanting and relaxing era.
+                    </p>
+                    <hr className='my-5' />
+                    <button
+                      type="button"
+                      className="w-full border-2  rounded-md mx-auto px-2 py-1.5 text-sm font-base text-black hover:shadow-lg transition duration-500 hover:bg-[#081C3A] hover:text-white">
+                      DETAILS
+                    </button>
+                  </div>
+                </div>
               </div>
 
             </div>
-          : null}
+            : null}
 
         </div>
 
@@ -392,36 +410,124 @@ export default function home() {
 
       <section>
         <div className="p-16 bg-[#081C3A] text-center">
-        <h2 className="text-sm py-3 font-base tracking-widest text-white">
-          OUR PARTNERS
-        </h2>
-        <h2 className="text-3xl max-w-3xl mx-auto font-bold tracking-wider py-4 text-white xl:text-6xl">
-          A network of carefully selected partners, each a master in thier respective fields.
-        </h2>
-        <div className="mt-6">
-          <a
-            href="#"
-            className="inline-flex w-full items-center justify-center overflow-hidden rounded-lg bg-gray-900 px-4 py-2.5 text-sm text-white shadow transition-colors duration-300 hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80 sm:mx-2 sm:w-auto"
-          >
-            <span className="mx-2">Get it on the App Store</span>
-          </a>
-          <a
-            href="#"
-            className="mt-4 inline-flex w-full items-center justify-center overflow-hidden rounded-lg bg-blue-600 px-4 py-2.5 text-sm text-white shadow transition-colors duration-300 hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80 sm:mx-2 sm:mt-0 sm:w-auto"
-          >
-            <svg
-              className="mx-2 h-5 w-5 fill-current"
-              viewBox="-28 0 512 512.00075"
-              xmlns="http://www.w3.org/2000/svg"
+          <h2 className="text-sm py-3 font-base tracking-widest text-white">
+            OUR PARTNERS
+          </h2>
+          <h2 className="text-3xl max-w-3xl mx-auto font-bold tracking-wider py-4 text-white xl:text-6xl">
+            A network of carefully selected partners, each a master in thier respective fields.
+          </h2>
+          <div className="mt-6">
+            <a
+              href="#"
+              className="inline-flex w-full items-center justify-center rounded-md px-8 py-4 bg-white text-sm text-black shadow transition duration-500 hover:scale-105 sm:mx-2 sm:w-auto"
             >
-              <path d="m432.320312 215.121094-361.515624-208.722656c-14.777344-8.53125-32.421876-8.53125-47.203126 0-.121093.070312-.230468.148437-.351562.21875-.210938.125-.421875.253906-.628906.390624-14.175782 8.636719-22.621094 23.59375-22.621094 40.269532v417.445312c0 17.066406 8.824219 32.347656 23.601562 40.878906 7.390626 4.265626 15.496094 6.398438 23.601563 6.398438s16.214844-2.132812 23.601563-6.398438l361.519531-208.722656c14.777343-8.53125 23.601562-23.8125 23.601562-40.878906s-8.824219-32.347656-23.605469-40.878906zm-401.941406 253.152344c-.21875-1.097657-.351562-2.273438-.351562-3.550782v-417.445312c0-2.246094.378906-4.203125.984375-5.90625l204.324219 213.121094zm43.824219-425.242188 234.21875 135.226562-52.285156 54.539063zm-6.480469 429.679688 188.410156-196.527344 54.152344 56.484375zm349.585938-201.835938-80.25 46.332031-60.125-62.714843 58.261718-60.773438 82.113282 47.40625c7.75 4.476562 8.589844 11.894531 8.589844 14.875s-.839844 10.398438-8.589844 14.875zm0 0"></path>
-            </svg>
-            <span className="mx-2">Get it on Google Play</span>
-          </a>
+              <span className="mx-2 tracking-wider">CONTACT US</span>
+            </a>
+            <a
+              href="#"
+              className="inline-flex w-full items-center justify-center rounded-md px-8 py-4 bg-inherit text-sm text-white border shadow transition duration-500 hover:scale-105 sm:mx-2 sm:w-auto"
+            >
+              <span className="mx-2 tracking-wider">HOW IT WORKS</span>
+            </a>
+          </div>
         </div>
+
+        <div className="relative w-full overflow-hidden">
+          {/* Wrapping div for seamless looping */}
+          <motion.div
+            className="flex"
+            animate={{
+              x: ['0%', '-100%'],
+              transition: {
+                ease: 'linear',
+                duration: 13,
+                repeat: Infinity,
+              }
+            }}
+          >
+            {/* Render duplicated slides */}
+            {duplicatedSlides.map((slide, index) => (
+              <div key={index} className="flex-shrink-0">
+                <div className="flex flex-col items-center justify-center h-[341px] w-[341px]">
+                  <div className="relative h-[341px] w-[341px] rounded-md">
+                    <img src={slide.image} alt={`Slide ${index + 1}`} className="max-h-full" />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </motion.div>
         </div>
       </section>
 
+      <section>
+        <div className='p-10 lg:p-20 bg-[#F7F8FC]'>
+
+          <div className="grid lg:grid-cols-2 lg:items-center">
+
+            <div className="rounded-2xl p-7 border-2 mx-auto max-w-xl">
+              <div className="w-full">
+                <img
+                  src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+                  alt="Laptop"
+                  className="rounded-2xl object-cover "
+                />
+                <div className="p-4">
+                  <h1 className='tracking-widest text-sm py-4'>
+                    GET STARTED TODAY
+                  </h1>
+                  <h1 className="inline-flex text-4xl font-semibold py-2">
+                    We make dreams into reality on a daily basis &nbsp;
+                  </h1>
+                  <p className="my-3 text-xl text-gray-600">
+                    We're passionate about what we do, we know our priorities inside and out and provide unparalleled expertise in pairing guests with their ideal safari destination or holiday home.
+                  </p>
+
+                  <button
+                    type="button"
+                    className="w-1/2 mt-5 border-2 rounded-md px-2 py-4 text-sm font-base text-white bg-[#32727A] transition ease-in-out duration-500 hover:scale-105 hover:bg-[#081C3A] ">
+                    CONTACT US TODAY
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* <div className="w-full lg:w-1/2">
+              <div className="lg:my-0 lg:px-10">
+                <p className="my-4 tracking-widest max-w-xl text-base leading-relaxed text-gray-600">
+                  OPULENCE OASIS BENEFITS
+                </p>
+
+                <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+                  What we do
+                </h2>
+
+                <p className="mt-4 max-w-xl text-base leading-relaxed text-gray-600">
+                  Your gateway to luxury real estate and travel in Kenya's most sought-after destinations.
+                </p>
+
+                <button
+                  type="button"
+                  className="inline-flex items-center tracking-wider w-[280px] h-14 rounded-md bg-[#32727A] mt-10 text-base font-semibold text-white hover:bg-[#081C3A]"
+                >
+                  <p className="mx-auto flex items-center">
+                    CHOOSE A DESTINATION
+                    <ChevronDown className="ml-2 h-4 w-4" />
+                  </p>
+                </button>
+              </div>
+            </div> */}
+
+            <div className="w-full pt-8 lg:p-10 ">
+              <img
+                src="https://images.unsplash.com/photo-1603575448878-868a20723f5d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDN8fGRldmVsb3BlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+                alt="ManWith Laptop"
+                className="h-full w-full rounded-md"
+              />
+            </div>
+          </div>
+
+        </div>
+      </section>
 
     </>
   )
