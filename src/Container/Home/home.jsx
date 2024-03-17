@@ -2,7 +2,6 @@ import { useState } from 'react'
 import React from 'react'
 import { ChevronDown, Copy, ArrowRight } from 'lucide-react'
 import { motion } from 'framer-motion';
-import logo from '../../assets/test.png'
 
 const slides = [
   { image: 'https://assets-global.website-files.com/6583d18e043fa866285fce1c/65e9c76b548876efb6590467_Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Luxury%20%20(1).jpg' },
@@ -15,7 +14,6 @@ const slides = [
   { image: 'https://assets-global.website-files.com/6583d18e043fa866285fce1c/65e9cca62e0c8a323cd03ec6_Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Luxury%20%20(4)%20(1).jpg' },
   { image: 'https://assets-global.website-files.com/6583d18e043fa866285fce1c/65e9c707891fce2e5fa324da_Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Luxury%20%20(2)%20(1).jpg' },
   { image: 'https://assets-global.website-files.com/6583d18e043fa866285fce1c/65e9c697f9e2f1b6ccf71e78_Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Luxury%20%20(1).jpg' },
-  { image: './test.png' },
 ];
 
 export default function home() {
@@ -163,7 +161,7 @@ export default function home() {
 
             <div className="w-full lg:w-1/2 pt-8 lg:p-10 ">
               <img
-                src="https://images.unsplash.com/photo-1603575448878-868a20723f5d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDN8fGRldmVsb3BlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+                src="./test2.jpeg"
                 alt="ManWith Laptop"
                 className="h-full w-full rounded-md"
               />
@@ -463,13 +461,12 @@ export default function home() {
       <section>
         <div className='p-10 lg:p-20 bg-[#F7F8FC]'>
 
-          <div className="grid lg:grid-cols-2 lg:items-center">
-
-            <div className="rounded-2xl p-7 border-2 mx-auto max-w-xl">
-              <div className="w-full">
+          <div className="grid lg:grid-cols-2 gap-10">
+            <div className="mx-auto max-w-lg h-max" style={{ position: "sticky", top: "70px" }}>
+              <div className="rounded-2xl w-full p-7 border-2">
                 <img
-                  src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
-                  alt="Laptop"
+                  src="./balloon1.jpg"
+                  alt="Air Ballon"
                   className="rounded-2xl object-cover "
                 />
                 <div className="p-4">
@@ -492,18 +489,47 @@ export default function home() {
               </div>
             </div>
 
-            <div className="w-full pt-8 lg:p-10 ">
-              <img
-                src="https://images.unsplash.com/photo-1603575448878-868a20723f5d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDN8fGRldmVsb3BlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
-                alt="ManWith Laptop"
-                className="h-full w-full rounded-md"
-              />
+            <div>
+              <p className="py-4 text-sm leading-relaxed text-gray-800">
+                WE ARE OPULENCE OASIS <hr />
+              </p>
+
+              <div className="w-full h-max p-8 lg:px-10  lg:py-0 border-l-2">
+
+                <div className="p-8 m-2 my-8 bg-white rounded-md space-y-3 transition duration-500 ease-in-out hover:shadow-lg hover:scale-105 border-2">
+                  <h1 className="py-3 text-2xl font-semibold capitalize text-gray-700">Masters of Luxury travel & living</h1>
+                  <p className="text-lg text-gray-500">
+                    Based in Nairobi Kenya, we are a distinguished purveyor of unparalleled luxury, offering a harmonious blend of exquisite travel experiences, bespoke concierge services, and exclusive real estate opportunity in Africa.
+                  </p>
+                </div>
+                <div className="p-8 m-2 my-8 bg-white rounded-lg space-y-3 transition duration-500 ease-in-out hover:shadow-lg hover:scale-105 border-2">
+                  <h1 className="py-3 text-2xl font-semibold capitalize text-gray-700">Redefining luxury</h1>
+                  <p className="text-lg text-gray-500">
+                  We believe that luxury is not just a material possession or an extravagant experience; it's a state of mind, a way of life. Our philosophy is centered around creating extraordinary experiences that transcend the boundaries of traditional luxury.
+                  </p>
+                </div>
+                <div className="p-8 m-2 my-8 bg-white rounded-lg space-y-3 transition duration-500 ease-in-out hover:shadow-lg hover:scale-105 border-2">
+                  <h1 className="py-3 text-2xl font-semibold capitalize text-gray-700">Dedicated to excellence</h1>
+                  <p className="text-lg text-gray-500">
+                  Whether it’s a captivating safari expedition or a lavish beach escape, our meticulous attention to detail ensures that every moment is steeped in luxury and wonder. In addition to our travel and concierge offerings, Opulence Oasis sets the stage for redefined living through our exclusive real estate services in Kenya. Our portfolio of luxury properties showcases the epitome of elegance and sophistication, presenting a rare opportunity to own a piece of Africa’s most coveted destinations.
+                  </p>
+                </div>
+                <div className="p-8 m-2 my-8 bg-white rounded-lg space-y-3 transition duration-500 ease-in-out hover:shadow-lg hover:scale-105 border-2">
+                  <h1 className="py-3 text-2xl font-semibold capitalize text-gray-700">Innovation</h1>
+                  <p className="text-lg text-gray-500">
+                    We’re here to elevate your travel and lifestyle aspirations in Africa, transcending expectations and crafting unforgettable moments that linger in the heart and mind. We invite you to embark on a journey with us, where every detail is meticulously tailored to reflect your unique desires and redefine luxury in its purest form.
+                  </p>
+                </div>
+
+              </div>
             </div>
+
+
           </div>
 
         </div>
 
-<img src={logo} alt="test image" srcset="" />
+        <img src="./test.png" alt="test image" srcset="" />
 
       </section>
 
