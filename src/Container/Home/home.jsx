@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import React from 'react'
-import { ChevronDown, Copy, ArrowRight } from 'lucide-react'
+import { ChevronDown, Copy, ArrowUpRight } from 'lucide-react'
 import { motion } from 'framer-motion';
 
 const slides = [
@@ -460,7 +460,6 @@ export default function home() {
 
       <section>
         <div className='p-10 lg:p-20 bg-[#F7F8FC]'>
-
           <div className="grid lg:grid-cols-2 gap-10">
             <div className="mx-auto max-w-lg h-max" style={{ position: "sticky", top: "70px" }}>
               <div className="rounded-2xl w-full p-7 border-2">
@@ -479,7 +478,6 @@ export default function home() {
                   <p className="my-3 text-xl text-gray-600">
                     We're passionate about what we do, we know our priorities inside and out and provide unparalleled expertise in pairing guests with their ideal safari destination or holiday home.
                   </p>
-
                   <button
                     type="button"
                     className="w-1/2 mt-5 border-2 rounded-md px-2 py-4 text-sm font-base text-white bg-[#32727A] transition ease-in-out duration-500 hover:scale-105 hover:bg-[#081C3A] ">
@@ -488,14 +486,11 @@ export default function home() {
                 </div>
               </div>
             </div>
-
             <div>
               <p className="py-4 text-sm leading-relaxed text-gray-800">
                 WE ARE OPULENCE OASIS <hr />
               </p>
-
               <div className="w-full h-max p-8 lg:px-10  lg:py-0 border-l-2">
-
                 <div className="p-8 m-2 my-8 bg-white rounded-md space-y-3 transition duration-500 ease-in-out hover:shadow-lg hover:scale-105 border-2">
                   <h1 className="py-3 text-2xl font-semibold capitalize text-gray-700">Masters of Luxury travel & living</h1>
                   <p className="text-lg text-gray-500">
@@ -505,13 +500,13 @@ export default function home() {
                 <div className="p-8 m-2 my-8 bg-white rounded-lg space-y-3 transition duration-500 ease-in-out hover:shadow-lg hover:scale-105 border-2">
                   <h1 className="py-3 text-2xl font-semibold capitalize text-gray-700">Redefining luxury</h1>
                   <p className="text-lg text-gray-500">
-                  We believe that luxury is not just a material possession or an extravagant experience; it's a state of mind, a way of life. Our philosophy is centered around creating extraordinary experiences that transcend the boundaries of traditional luxury.
+                    We believe that luxury is not just a material possession or an extravagant experience; it's a state of mind, a way of life. Our philosophy is centered around creating extraordinary experiences that transcend the boundaries of traditional luxury.
                   </p>
                 </div>
                 <div className="p-8 m-2 my-8 bg-white rounded-lg space-y-3 transition duration-500 ease-in-out hover:shadow-lg hover:scale-105 border-2">
                   <h1 className="py-3 text-2xl font-semibold capitalize text-gray-700">Dedicated to excellence</h1>
                   <p className="text-lg text-gray-500">
-                  Whether it’s a captivating safari expedition or a lavish beach escape, our meticulous attention to detail ensures that every moment is steeped in luxury and wonder. In addition to our travel and concierge offerings, Opulence Oasis sets the stage for redefined living through our exclusive real estate services in Kenya. Our portfolio of luxury properties showcases the epitome of elegance and sophistication, presenting a rare opportunity to own a piece of Africa’s most coveted destinations.
+                    Whether it’s a captivating safari expedition or a lavish beach escape, our meticulous attention to detail ensures that every moment is steeped in luxury and wonder. In addition to our travel and concierge offerings, Opulence Oasis sets the stage for redefined living through our exclusive real estate services in Kenya. Our portfolio of luxury properties showcases the epitome of elegance and sophistication, presenting a rare opportunity to own a piece of Africa’s most coveted destinations.
                   </p>
                 </div>
                 <div className="p-8 m-2 my-8 bg-white rounded-lg space-y-3 transition duration-500 ease-in-out hover:shadow-lg hover:scale-105 border-2">
@@ -520,16 +515,94 @@ export default function home() {
                     We’re here to elevate your travel and lifestyle aspirations in Africa, transcending expectations and crafting unforgettable moments that linger in the heart and mind. We invite you to embark on a journey with us, where every detail is meticulously tailored to reflect your unique desires and redefine luxury in its purest form.
                   </p>
                 </div>
-
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
+      <section>
 
+        <div className="flex max-w-7xl mx-auto gap-10 flex-col md:flex-row p-5">
+
+          <div className="lg:mb-28 max-w-7xl lg:ms-28 ">
+            <img src="./balloon2.jpeg" alt="Ballon" className="h-[90vh] w-full rounded-md object-cover items-center mx-auto" />
+
+            <div className='absolute bg-white -mt-44 rounded-xl max-w-lg p-5 ms-6 lg:ms-12 shadow-lg'>
+              <h1 className='text-black text-3xl text-center font-bold subpixel-antialiased p-4'>Hot Air Ballon Services</h1>
+              <p className='text-slate-500 text-xl p-5'>A unique and exhilarating experience. With highly trained pilots and expert guides, Opulence Oasis ensures a safe and unforgettable journey.</p>
+            </div>
           </div>
 
-        </div>
+          <div className="p-2 max-w-md w-full">
+            <p className='tracking-widest text-gray-700 font-semibold'>Experience <hr /></p>
 
-        <img src="./test.png" alt="test image" srcset="" />
+            <div className="flex  h-max m-7 w-full flex-col rounded-md border md:flex-row hover:shadow-lg transition ease-in-out duration-700 hover:scale-105">
+              <div className="h-full w-full md:h-[100px] md:w-[124px] p-1">
+                <img
+                  src="./night.png"
+                  alt="Night life"
+                  className="h-full w-full rounded-md object-cover"
+                />
+              </div>
+              <div>
+                <div className="p-4">
+                  <h1 className="inline-flex text-lg font-semibold ">
+                    Night Life & Events
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div className="flex  h-max m-7 w-full flex-col rounded-md border md:flex-row hover:shadow-lg transition ease-in-out duration-700 hover:scale-105">
+              <div className="h-full w-full md:h-[100px] md:w-[124px] p-1">
+                <img
+                  src="fine.png"
+                  alt="Fine Dining"
+                  className="h-full w-full rounded-md object-cover"
+                />
+              </div>
+              <div>
+                <div className="p-4">
+                  <h1 className="inline-flex text-lg font-semibold ">
+                    Fine Dining
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div className="flex  h-max m-7 w-full flex-col rounded-md border md:flex-row hover:shadow-lg transition ease-in-out duration-700 hover:scale-105">
+              <div className="h-full w-full md:h-[100px] md:w-[124px] p-1">
+                <img
+                  src="car.png"
+                  alt="Car"
+                  className="h-full w-full rounded-md object-cover"
+                />
+              </div>
+              <div>
+                <div className="p-4">
+                  <h1 className="inline-flex text-lg font-semibold ">
+                    Limousines
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div className="flex  h-max m-7 w-full flex-col rounded-md border md:flex-row hover:shadow-lg transition ease-in-out duration-700 hover:scale-105">
+              <div className="h-full w-full md:h-[100px] md:w-[124px]">
+                <img
+                  src="game.png"
+                  alt="Game"
+                  className="h-full w-full rounded-md object-cover"
+                />
+              </div>
+              <div>
+                <div className="p-4">
+                  <h1 className="inline-flex text-lg font-semibold ">
+                    Game Drives
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
       </section>
 
