@@ -7,3 +7,6 @@ function blogs() {
 }
 
 export default blogs
+
+
+// https://www.youtube.com/watch?v=GciGyxnHpxQ

@@ -2,7 +2,7 @@ import { useState } from 'react'
 import React from 'react'
 import { ChevronDown, Copy, ArrowRight } from 'lucide-react'
 import { motion } from 'framer-motion';
-import Safari from '../../assets/test.png'
+import logo from '../../assets/test.png'
 
 const slides = [
   { image: 'https://assets-global.website-files.com/6583d18e043fa866285fce1c/65e9c76b548876efb6590467_Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Luxury%20%20(1).jpg' },
@@ -15,6 +15,7 @@ const slides = [
   { image: 'https://assets-global.website-files.com/6583d18e043fa866285fce1c/65e9cca62e0c8a323cd03ec6_Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Luxury%20%20(4)%20(1).jpg' },
   { image: 'https://assets-global.website-files.com/6583d18e043fa866285fce1c/65e9c707891fce2e5fa324da_Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Luxury%20%20(2)%20(1).jpg' },
   { image: 'https://assets-global.website-files.com/6583d18e043fa866285fce1c/65e9c697f9e2f1b6ccf71e78_Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Luxury%20%20(1).jpg' },
+  { image: './test.png' },
 ];
 
 export default function home() {
@@ -491,32 +492,6 @@ export default function home() {
               </div>
             </div>
 
-            {/* <div className="w-full lg:w-1/2">
-              <div className="lg:my-0 lg:px-10">
-                <p className="my-4 tracking-widest max-w-xl text-base leading-relaxed text-gray-600">
-                  OPULENCE OASIS BENEFITS
-                </p>
-
-                <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-                  What we do
-                </h2>
-
-                <p className="mt-4 max-w-xl text-base leading-relaxed text-gray-600">
-                  Your gateway to luxury real estate and travel in Kenya's most sought-after destinations.
-                </p>
-
-                <button
-                  type="button"
-                  className="inline-flex items-center tracking-wider w-[280px] h-14 rounded-md bg-[#32727A] mt-10 text-base font-semibold text-white hover:bg-[#081C3A]"
-                >
-                  <p className="mx-auto flex items-center">
-                    CHOOSE A DESTINATION
-                    <ChevronDown className="ml-2 h-4 w-4" />
-                  </p>
-                </button>
-              </div>
-            </div> */}
-
             <div className="w-full pt-8 lg:p-10 ">
               <img
                 src="https://images.unsplash.com/photo-1603575448878-868a20723f5d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDN8fGRldmVsb3BlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
@@ -527,6 +502,9 @@ export default function home() {
           </div>
 
         </div>
+
+<img src={logo} alt="test image" srcset="" />
+
       </section>
 
     </>
