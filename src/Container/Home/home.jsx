@@ -330,8 +330,8 @@ export default function home() {
               <div className="rounded-2xl p-4 border-2 mx-auto transition duration-500 ease-in-out hover:shadow-xl hover:scale-105">
                 <div className="w-[300px]">
                   <img
-                    src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
-                    alt="Laptop"
+                    src="./chair.jpg"
+                    alt=""
                     className="h-[200px] w-full rounded-2xl object-cover "
                   />
                   <div className="p-4">
@@ -354,8 +354,8 @@ export default function home() {
               <div className="rounded-2xl p-4 border-2 mx-auto transition duration-500 ease-in-out hover:shadow-xl hover:scale-105">
                 <div className="w-[300px]">
                   <img
-                    src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
-                    alt="Laptop"
+                    src="./mountain.jpg"
+                    alt=""
                     className="h-[200px] w-full rounded-2xl object-cover"
                   />
                   <div className="p-4">
@@ -378,8 +378,8 @@ export default function home() {
               <div className="rounded-2xl p-4 border-2 mx-auto transition duration-500 ease-in-out hover:shadow-xl hover:scale-105">
                 <div className="w-[300px]">
                   <img
-                    src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
-                    alt="Laptop"
+                    src="zebra.jpg"
+                    alt=""
                     className="h-[200px] w-full rounded-2xl object-cover"
                   />
                   <div className="p-4">
@@ -459,9 +459,9 @@ export default function home() {
       </section>
 
       <section>
-        <div className='p-10 lg:p-20 bg-[#F7F8FC]'>
+        <div className='p-10 lg:p-20'>
           <div className="grid lg:grid-cols-2 gap-10">
-            <div className="mx-auto max-w-lg h-max" style={{ position: "sticky", top: "70px" }}>
+            <div className="mx-auto max-w-lg h-max bg-[#F7F8FC]" style={{ position: "sticky", top: "70px" }}>
               <div className="rounded-2xl w-full p-7 border-2">
                 <img
                   src="./balloon1.jpg"
