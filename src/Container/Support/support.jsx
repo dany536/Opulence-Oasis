@@ -7,8 +7,8 @@ function support() {
     <>
       <section>
         <div className='bg-gray-500'>
-          <img className="h-[89vh] w-full" src="support.jpeg" alt="" srcset="" />
-          <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+          <img className="w-full" src="support.jpeg" alt="" srcset="" />
+          <div className="absolute h-[161vh] inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
           <div className="absolute bottom-1/3 w-full ">
             <h1 className="text-5xl text-center tracking-wider font-bold text-white">Have a question ?</h1>
           </div>
