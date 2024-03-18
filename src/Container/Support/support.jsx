@@ -1,23 +1,207 @@
 import React from 'react'
+import { ArrowRight } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 function support() {
   return (
-    <div>
-      <div className="bg-green-400 h-32"></div>
-      <div className="grid grid-cols-2 p-4 m-5 gap-3">
-        <div className="bg-red-400 h-max" style={{position: "sticky", top: "50px"}}>
-          <p className="p-10 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias nisi iste porro omnis placeat? Eum deleniti ad unde harum non aliquam maxime corporis suscipit quam ullam enim voluptas aperiam dignissimos exercitationem fugiat, recusandae officia fugit molestiae magni illum quas. Debitis iste facere aspernatur ad commodi porro libero tempore quam molestiae mollitia atque, voluptatibus rem vero voluptas adipisci ut velit? Magni labore debitis laudantium dignissimos harum, nisi tempore culpa sed libero ratione quo hic similique eius! Qui suscipit odio magnam aut provident, aspernatur debitis! Deserunt eius impedit quia delectus tempora aliquid est quas libero quod modi! Reiciendis, ea optio assumenda pariatur perspiciatis vitae possimus quo temporibus architecto porro, quidem explicabo, similique error iure illum? Veritatis voluptatum nisi quasi. Impedit nesciunt voluptatem architecto necessitatibus dolorum quibusdam culpa suscipit facere, totam cum minus cupiditate hic esse earum quod blanditiis maiores vero possimus provident molestiae ea doloremque, dolorem qui. Sapiente doloribus modi placeat quod asperiores ullam vel magnam molestias nihil cumque porro impedit dolore quas repellat perspiciatis, minima corporis fuga soluta odit veritatis mollitia suscipit excepturi laborum vitae! Explicabo vero ratione officiis dolor! Blanditiis vero repellendus voluptatibus quos suscipit qui explicabo culpa eos fugit, saepe vel cupiditate dolore repudiandae autem rem aspernatur. Aliquam, in!</p>
+    <>
+      <section>
+        <div className='bg-gray-500'>
+          <img className="h-[89vh] w-full" src="support.jpeg" alt="" srcset="" />
+          <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+          <div className="absolute bottom-1/3 w-full ">
+            <h1 className="text-5xl text-center tracking-wider font-bold text-white">Have a question ?</h1>
+          </div>
         </div>
-        <div className="bg-orange-500 pe-10">
-          <p className="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde cupiditate, iste officiis a reprehenderit suscipit nisi ipsum facere temporibus architecto distinctio dicta vitae. Amet nisi omnis sequi deleniti officia ullam consequuntur. Assumenda facilis quam ullam quasi suscipit! Ex, nam cum delectus a veniam eveniet dicta assumenda minima suscipit sunt rerum totam nesciunt quis facilis tempore id quos, unde est laudantium nobis expedita corporis asperiores ullam. Itaque ratione, distinctio, ex explicabo adipisci fugit, consequuntur quasi illo sapiente animi laborum dignissimos beatae ipsum nihil tempore excepturi dolorum saepe similique architecto a ea quidem. Libero recusandae id accusamus debitis ratione aliquam placeat natus, deleniti inventore praesentium sit repellat eum eius? Error fugit adipisci repellat reprehenderit natus sapiente molestias, libero dolorem similique, maiores nulla odio rerum quae repudiandae omnis animi? Eaque ipsum, error a repellat voluptatum culpa veniam voluptatem delectus exercitationem quibusdam nesciunt fuga ea nam, natus nisi dolore autem officia. Ex consectetur iste a quos blanditiis asperiores explicabo ea harum nemo sit dicta assumenda quidem, suscipit vitae provident voluptates, animi culpa voluptatem cumque adipisci ipsa corporis. Consequuntur repellat laborum nostrum quas aut iusto, maiores similique nisi molestias facere ea distinctio officia, beatae asperiores atque nam. Dicta maiores nemo sit iusto neque harum dignissimos? Commodi ducimus totam, architecto perferendis corporis sapiente id omnis quae inventore quo, odio at sit fugit voluptates deleniti et, doloremque quasi obcaecati fugiat placeat veritatis natus. Iste consectetur ducimus in quaerat vel repudiandae obcaecati distinctio nostrum, eum repellat aspernatur? Sint error ipsa optio mollitia nobis corrupti nihil quaerat nulla, impedit consectetur repellat ipsum, id perspiciatis. Fuga ullam cumque, consequuntur perferendis, dicta qui quis ipsa architecto quia, non nemo. Cupiditate atque voluptatum illo repellendus impedit pariatur ipsam ducimus, suscipit harum quidem animi reiciendis ea eaque nihil porro corporis quam rem ad adipisci asperiores delectus ullam veniam. Ducimus dolorum veritatis mollitia! Eum ipsam minus velit! Libero omnis assumenda quia quae unde numquam voluptatibus. Ratione excepturi natus aspernatur nobis quia accusantium iste esse ad rerum. Earum possimus, pariatur, fuga blanditiis quam commodi nobis vero corrupti sed ullam veritatis laudantium vitae asperiores, illum eius tempora aut dolores nam ipsum exercitationem voluptatibus repudiandae. Dolorem odio vel odit quam. Quia culpa repellat ipsam officia saepe impedit, quaerat inventore, rem veritatis necessitatibus atque libero, id soluta corporis est. Praesentium beatae temporibus esse cumque mollitia natus alias ipsum error nobis accusamus cupiditate officia, eum corrupti maxime eligendi assumenda pariatur qui ab consequatur explicabo dolor fuga. Odit facilis veniam ipsam deleniti id reprehenderit, quibusdam quisquam quia commodi sint accusamus adipisci, maiores quasi explicabo praesentium ex, quae nihil. Nihil, unde omnis, delectus ut sapiente velit inventore nostrum, dolores dicta quos odio dolore. Earum molestias illum qui? Cumque in accusamus maiores facere doloremque harum ullam sunt dolore incidunt! Quam nulla, autem earum nobis magni debitis ad rem cupiditate voluptatum, nemo recusandae placeat cum corrupti quos. Sapiente facilis corrupti nihil quod molestiae libero dolorum assumenda consectetur quisquam culpa laudantium quas amet, quam omnis temporibus, quasi unde? Enim quaerat incidunt deleniti non aspernatur error deserunt, possimus perferendis modi officiis corrupti, dignissimos nam quasi.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias nisi iste porro omnis placeat? Eum deleniti ad unde harum non aliquam maxime corporis suscipit quam ullam enim voluptas aperiam dignissimos exercitationem fugiat, recusandae officia fugit molestiae magni illum quas. Debitis iste facere aspernatur ad commodi porro libero tempore quam molestiae mollitia atque, voluptatibus rem vero voluptas adipisci ut velit? Magni labore debitis laudantium dignissimos harum, nisi tempore culpa sed libero ratione quo hic similique eius! Qui suscipit odio magnam aut provident, aspernatur debitis! Deserunt eius impedit quia delectus tempora aliquid est quas libero quod modi! Reiciendis, ea optio assumenda pariatur perspiciatis vitae possimus quo temporibus architecto porro, quidem explicabo, similique error iure illum? Veritatis voluptatum nisi quasi. Impedit nesciunt voluptatem architecto necessitatibus dolorum quibusdam culpa suscipit facere, totam cum minus cupiditate hic esse earum quod blanditiis maiores vero possimus provident molestiae ea doloremque, dolorem qui. Sapiente doloribus modi placeat quod asperiores ullam vel magnam molestias nihil cumque porro impedit dolore quas repellat perspiciatis, minima corporis fuga soluta odit veritatis mollitia suscipit excepturi laborum vitae! Explicabo vero ratione officiis dolor! Blanditiis vero repellendus voluptatibus quos suscipit qui explicabo culpa eos fugit, saepe vel cupiditate dolore repudiandae autem rem aspernatur. Aliquam, in!</p>
-        </div>
+      </section>
 
-      </div>
-    </div>
+      <section>
+
+        <div className="max-w-6xl mx-auto lg:py-15 py-10">
+          <p className="tracking-widest text-sm text-center py-10">FILL OUT THE FORM BELOW</p>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2">
+
+            <div className="flex items-center bg-[#F7F8FC] rounded-xl justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-8">
+              <div className="xl:mx-auto xl:w-full xl:max-w-sm 2xl:max-w-md">
+
+                <form action="#" method="POST" className="mt-8">
+                  <div className="space-y-5">
+
+                    <div>
+                      <label htmlFor="" className="text-base font-medium text-gray-900">
+                        {' '}
+                        Name{' '}
+                      </label>
+                      <div className="mt-2 flex flex-row gap-2">
+                        <input
+                          className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                          type="text"
+                          placeholder="First name"
+                        ></input>
+                        <input
+                          className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                          type="text"
+                          placeholder="Last name"
+                        ></input>
+                      </div>
+                    </div>
+
+                    <div>
+                      <label htmlFor="" className="text-base font-medium text-gray-900">
+                        {' '}
+                        Email address{' '}
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                          type="email"
+                          placeholder="Your email"
+                        ></input>
+                      </div>
+                    </div>
+
+                    <div>
+                      <label htmlFor="" className="text-base font-medium text-gray-900">
+                        {' '}
+                        Phone{' '}
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                          type="email"
+                          placeholder="(555) 555-555"
+                        ></input>
+                      </div>
+                    </div>
+
+                    <div>
+                      <label htmlFor="" className="text-base font-medium text-gray-900">
+                        {' '}
+                        Message{' '}
+                      </label>
+                      <div className="mt-2">
+                        <textarea rows="4" className="flex w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                          type="terabox"
+                          placeholder="Your message">
+                        </textarea>
+                      </div>
+                    </div>
+
+                    <div>
+                      <button
+                        type="button"
+                        className="inline-flex w-full items-center justify-center rounded-md bg-[#3572ff] px-3.5 py-2.5 font-semibold leading-7 text-white hover:bg-black/80"
+                      >
+                        Submit <ArrowRight className="ml-2" size={16} />
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div className="px-20 py-5" style={{ position: "sticky", top: "70px" }}>
+              <p className="tracking-widest text-sm">QUICK LINKS <hr /></p>
+              <div className="bg-[#F7F8FC] transition ease-in-out duration-700 hover:scale-105 my-5 border-2 rounded-md p-3">
+                <Link to='/'>
+                  <p>Schedule a call</p>
+                </Link>
+              </div>
+              <div className="bg-[#F7F8FC] transition ease-in-out duration-700 hover:scale-105 my-5 border-2 rounded-md p-3">
+                <Link to='/'>
+                  <p>support@opulenceoasis.co</p>
+                </Link>
+              </div>
+              <div className="bg-[#F7F8FC] transition ease-in-out duration-700 hover:scale-105 my-5 border-2 rounded-md p-3">
+                <Link to='/'>
+                  <p>(555) 555-5555</p>
+                </Link>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section>
+        <div className="bg-[#081C3A] mb-96">
+          <div className="p-16 py-20 max-w-6xl mx-auto text-center">
+            <h2 className="text-sm py-3 font-base tracking-widest text-white">
+              LET'S TALK
+            </h2>
+            <h2 className="text-2xl max-w-4xl mx-auto font-bold tracking-wider py-4 text-white xl:text-6xl">
+              Contact an agent directly, today
+            </h2>
+          </div>
+
+          <div className='absolute bg-white -mt-10 rounded-xl max-w-6xl p-1 ms-6 lg:ms-20 shadow-lg'>
+
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-2 max-w-6xl mx-auto">
+
+              <div className="rounded-2xl bg-white h-max p-4 border mx-auto transition duration-500 ease-in-out hover:shadow-xl hover:scale-105">
+                <div className="">
+                  <img
+                    src="./kevin.png"
+                    alt=""
+                    className="h-full rounded-2xl object-cover "
+                  />
+                  <div className="p-4">
+                    <h1 className="inline-flex items-center text-xl font-semibold">
+                      Kevin Sylk &nbsp;
+                    </h1>
+                    <h1 className="inline-flex text-md font-semibold text-gray-500">
+                      Nairobi, Kenya &nbsp;
+                    </h1>
+                  </div>
+                </div>
+              </div>
+
+              <div className="rounded-2xl bg-white h-max p-4 border mx-auto transition duration-500 ease-in-out hover:shadow-xl hover:scale-105">
+                <div className="">
+                  <img
+                    src="./graca.jpeg"
+                    alt=""
+                    className="h-64 w-full rounded-2xl object-cover "
+                  />
+                  <div className="p-4">
+                    <h1 className="inline-flex items-center text-xl font-semibold">
+                      Graca Keboi &nbsp;
+                    </h1>
+                    <h1 className="inline-flex text-md font-semibold text-gray-500">
+                      Brazil &nbsp;
+                    </h1>
+                  </div>
+                </div>
+              </div>
+
+              <div className="rounded-2xl bg-white h-max p-4 border mx-auto transition duration-500 ease-in-out hover:shadow-xl hover:scale-105">
+                <div className="">
+                  <img
+                    src="./samantha.jpeg"
+                    alt=""
+                    className="h-64 w-full rounded-2xl object-cover "
+                  />
+                  <div className="p-4">
+                    <h1 className="inline-flex items-center text-xl font-semibold">
+                      Samantha Tai &nbsp;
+                    </h1>
+                    <h1 className="inline-flex text-md font-semibold text-gray-500">
+                      Miami, Florida &nbsp;
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </>
   )
 }
 
 export default support
 
-
-// https://www.youtube.com/watch?v=GciGyxnHpxQ

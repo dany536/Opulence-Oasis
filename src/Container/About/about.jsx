@@ -71,7 +71,7 @@ function about() {
         </div>
       </section>
 
-      <section className=''>
+      <section>
         <div className="bg-[#081C3A] mb-96">
           <div className="p-16 max-w-6xl mx-auto text-center">
             <h2 className="text-sm py-3 font-base tracking-widest text-white">
@@ -87,7 +87,7 @@ function about() {
           
           <div className='absolute bg-white -mt-10 rounded-xl max-w-6xl p-1 ms-6 lg:ms-20 shadow-lg'>
             
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-1 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-2 max-w-6xl mx-auto">
 
               <div className="rounded-2xl bg-white h-max p-4 border mx-auto transition duration-500 ease-in-out hover:shadow-xl hover:scale-105">
                 <div className="">
@@ -124,6 +124,7 @@ function about() {
                   </div>
                 </div>
               </div>
+       
               <div className="rounded-2xl bg-white h-max p-4 border mx-auto transition duration-500 ease-in-out hover:shadow-xl hover:scale-105">
                 <div className="">
                   <img
@@ -141,8 +142,6 @@ function about() {
                   </div>
                 </div>
               </div>
-
-
             </div>
           </div>
 
