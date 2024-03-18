@@ -2,6 +2,7 @@ import { useState } from 'react'
 import React from 'react'
 import { ChevronDown, Copy, ArrowUpRight } from 'lucide-react'
 import { motion } from 'framer-motion';
+import Feature from '../Feature_Properties/feature'
 
 const slides = [
   { image: 'https://assets-global.website-files.com/6583d18e043fa866285fce1c/65e9c76b548876efb6590467_Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Luxury%20%20(1).jpg' },
@@ -117,13 +118,13 @@ export default function home() {
 
       <section>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-xl text-center mb-20">
+          <div className="mx-auto max-w-xl text-center mb-5">
             <h2 className="mt-6 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
               Featured Properties
             </h2>
           </div>
-
         </div>
+        <Feature />
       </section>
 
       <section>

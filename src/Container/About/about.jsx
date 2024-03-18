@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -10,25 +11,30 @@ import 'swiper/css/navigation';
 //import './styles.css';
 
 // import required modules
-import { Pagination, Navigation } from 'swiper/modules';
+import {Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
 function about() {
   return (
     <div>
-      <h1 className="text-center text-3xl underline p-4">About Us</h1>
       <Swiper
+        spaceBetween={0}
+        centeredSlides={true}
+        loop={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         pagination={{
-          type: 'progressbar',
+          clickable: true,
         }}
         navigation={true}
-        modules={[Pagination, Navigation]}
+        modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide className='text-center h-screen items-center'>Slide 1</SwiperSlide>
-        <SwiperSlide className='text-center h-screen items-center'>Slide 2</SwiperSlide>
-        <SwiperSlide className='text-center h-screen items-center'>Slide 3</SwiperSlide>
-        <SwiperSlide className='text-center h-screen items-center'>Slide 4</SwiperSlide>
+        <SwiperSlide className='h-screen w-full' ><img src='./d1.png' /></SwiperSlide>
+        <SwiperSlide ><img src='./d2.png' /></SwiperSlide>
+        <SwiperSlide ><img src='./d3.png' /></SwiperSlide>
       </Swiper>
 
     </div>
