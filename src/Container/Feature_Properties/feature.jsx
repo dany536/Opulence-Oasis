@@ -38,9 +38,9 @@ export default function feature() {
                         disableOnInteraction: false,
                     }}
                     modules={[EffectCoverflow, Autoplay, Navigation]}
-                    className="swiper_container"
+                    className="swiper_containerF"
                 >
-                    <SwiperSlide>
+                    <SwiperSlide className='swiperslideF'>
                         <Link to="/about">
                             <img className='transition ease-in-out duration-700 hover:scale-105' src="./holiday_slide2.jpg" />
                             <div className="cursor-pointer absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
@@ -52,7 +52,7 @@ export default function feature() {
                             </div>
                         </Link>
                     </SwiperSlide>
-                    <SwiperSlide>
+                    <SwiperSlide className='swiperslideF'>
                         <Link to="/about">
                             <img className='transition ease-in-out duration-700 hover:scale-105' src="./real_slide2.jpg" />
                             <div className="cursor-pointer absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
@@ -64,7 +64,7 @@ export default function feature() {
                             </div>
                         </Link>
                     </SwiperSlide>
-                    <SwiperSlide>
+                    <SwiperSlide className='swiperslideF'>
                         <Link to="/about">
                             <img className='transition ease-in-out duration-700 hover:scale-105' src="./boutique_slide2.jpg" />
                             <div className="cursor-pointer absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
@@ -76,7 +76,7 @@ export default function feature() {
                             </div>
                         </Link>
                     </SwiperSlide>
-                    <SwiperSlide>
+                    <SwiperSlide className='swiperslideF'>
                         <Link to="/about">
                             <img className='transition ease-in-out duration-700 hover:scale-105' src="./lodges_slide2.png" />
                             <div className="cursor-pointer absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
@@ -88,7 +88,7 @@ export default function feature() {
                             </div>
                         </Link>
                     </SwiperSlide>
-                    <SwiperSlide>
+                    <SwiperSlide className='swiperslideF'>
                         <Link to="/about">
                             <img className='transition ease-in-out duration-700 hover:scale-105' src="./camps_slide2.jpg" />
                             <div className="cursor-pointer absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
