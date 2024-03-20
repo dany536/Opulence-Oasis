@@ -82,26 +82,26 @@ export default function home() {
             disableOnInteraction: false,
           }}
           pagination={{
-            clickable: true,
+            clickable: false,
           }}
           navigation={true}
-          modules={[Autoplay, Pagination, Navigation]}
-          className="mySwiper h-[90vh] bg-slate-500"
+          modules={[Autoplay, Navigation]}
+          className="mySwiper h-max md:h-[90vh]"
         >
           <SwiperSlide >
-            <Link to="/about">
+            <Link to="/vacation/clane">
               <img className="object-fill" src='./d1.png' />
               <div className="cursor-pointer absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
               <div className="absolute bottom-0 right-0">
-                <p className="tracking-widest text-white text-sm p-4 ms-10">POPULAR LOCATION <hr /></p>
-                <div className="flex flex-row gap-2">
+                <p className="tracking-widest text-white text-xs md:text-sm md:p-4 p-2 ms-5 md:ms-10">POPULAR LOCATION <hr /></p>
+                <div className="flex flex-row gap-1">
                   <div className="bg-white rounded-lg rounded-b-none rounded-e-none">
-                    <p className='p-5'> <MoveRight /></p><hr />
-                    <p className='p-5'> <MoveLeft /></p>
+                  <p className='p-2 md:p-5'> <MoveRight className='h-3 md:h-3 ' /></p><hr />
+                    <p className='p-2 md:p-5'> <MoveLeft className='h-3 md:h-3' /></p>
                   </div>
-                  <div className="p-10 pb-12 bg-white mx-auto w-[450px] text-black">
-                    <h1 className="text-xl font-semibold tracking-widest">Borana Lodge, Safari Lodges</h1>
-                    <p className="mt-3 text-sm tracking-widest">LAIKIPIA COUNTY</p>
+                  <div className="p-2 md:p-5 pb-1 md:pb-12 bg-white mx-auto md:w-[450px] text-black">
+                    <h1 className="text-sm md:text-xl font-semibold tracking-widest">Borana Lodge, Safari Lodges</h1>
+                    <p className="mt-1 text-xs md:text-sm tracking-widest">LAIKIPIA COUNTY</p>
                   </div>
                 </div>
               </div>
@@ -109,19 +109,19 @@ export default function home() {
           </SwiperSlide>
 
           <SwiperSlide >
-            <Link to="/about">
+            <Link to="/vacation/clane">
               <img className="object-fill" src='./d2.png' />
               <div className="cursor-pointer absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
               <div className="absolute bottom-0 right-0">
-                <p className="tracking-widest text-white text-sm p-4 ms-10">POPULAR LOCATION <hr /></p>
-                <div className="flex flex-row gap-2">
+                <p className="tracking-widest text-white text-xs md:text-sm md:p-4 p-2 ms-5 md:ms-10">POPULAR LOCATION <hr /></p>
+                <div className="flex flex-row gap-1">
                   <div className="bg-white rounded-lg rounded-b-none rounded-e-none">
-                    <p className='p-5'> <MoveRight /></p><hr />
-                    <p className='p-5'> <MoveLeft /></p>
+                  <p className='p-2 md:p-5'> <MoveRight className='h-3 md:h-3 ' /></p><hr />
+                    <p className='p-2 md:p-5'> <MoveLeft className='h-3 md:h-3' /></p>
                   </div>
-                  <div className="p-10 pb-12 bg-white mx-auto w-[450px] text-black">
-                  <h1 className="text-xl font-semibold tracking-widest">Elsa's Kopje,</h1>
-                    <p className="mt-3 text-sm tracking-widest">NAIROKI COUNTY</p>
+                  <div className="p-2 md:p-5 pb-1 md:pb-12 bg-white mx-auto w-[200px] md:w-[450px] text-black">
+                    <h1 className="text-sm md:text-xl font-semibold tracking-widest">Elsa's Kopje, Brazil</h1>
+                    <p className="mt-1 text-xs md:text-sm tracking-widest">NAIROKI COUNTY</p>
                   </div>
                 </div>
               </div>
@@ -129,32 +129,31 @@ export default function home() {
           </SwiperSlide>
 
           <SwiperSlide >
-            <Link to="/about">
+            <Link to="/vacation/clane">
               <img className="object-fill" src='./d3.png' />
               <div className="cursor-pointer absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
               <div className="absolute bottom-0 right-0">
-                <p className="tracking-widest text-white text-sm p-4 ms-10">POPULAR LOCATION <hr /></p>
-                <div className="flex flex-row gap-2">
+                <p className="tracking-widest text-white text-xs md:text-sm md:p-4 p-2 ms-5 md:ms-10">POPULAR LOCATION <hr /></p>
+                <div className="flex flex-row gap-1">
                   <div className="bg-white rounded-lg rounded-b-none rounded-e-none">
-                    <p className='p-5'> <MoveRight /></p><hr />
-                    <p className='p-5'> <MoveLeft /></p>
+                  <p className='p-2 md:p-5'> <MoveRight className='h-3 md:h-3 ' /></p><hr />
+                    <p className='p-2 md:p-5'> <MoveLeft className='h-3 md:h-3' /></p>
                   </div>
-                  <div className="p-10 pb-12 bg-white mx-auto w-[450px] text-black">
-                  <h1 className="text-xl font-semibold tracking-widest">Angama Mara, Safari Lodges</h1>
-                    <p className="mt-3 text-sm tracking-widest">NAROK COUNTY</p>
+                  <div className="p-2 md:p-5 pb-1 md:pb-12 bg-white mx-auto md:w-[450px] text-black">
+                    <h1 className="text-sm md:text-xl font-semibold tracking-widest">Angama Mara, Safari Lodges</h1>
+                    <p className="mt-1 text-xs md:text-sm tracking-widest">NAROK COUNTY</p>
                   </div>
                 </div>
               </div>
             </Link>
           </SwiperSlide>
-
         </Swiper>
       </section>
 
       <section>
         <div className="mx-auto max-w-7xl p-6 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-xl text-center mb-5">
-            <h2 className="mt-6 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+          <div className="mx-auto max-w-xl text-center py-3 md:py-5">
+            <h2 className="text-2xl md:text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
               Featured Properties
             </h2>
           </div>
@@ -164,27 +163,26 @@ export default function home() {
 
       <section>
         <div className='p-10 lg:p-20 bg-[#F7F8FC]'>
-
           <div className="lg:flex lg:flex-row lg:items-center">
             <div className="w-full lg:w-1/2">
               <div className="lg:my-0 lg:px-10">
-                <p className="my-4 tracking-widest max-w-xl text-base leading-relaxed text-gray-600">
+                <p className="my-4 tracking-widest max-w-xl text-sm md:text-base leading-relaxed text-gray-600">
                   OPULENCE OASIS BENEFITS
                 </p>
 
-                <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+                <h2 className="text-2xl md:text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
                   What we do
                 </h2>
 
-                <p className="mt-4 max-w-xl text-base leading-relaxed text-gray-600">
+                <p className="mt-4 max-w-xl text-sm md:text-base leading-relaxed text-gray-600">
                   Your gateway to luxury real estate and travel in Kenya's most sought-after destinations.
                 </p>
 
                 <button
                   type="button"
-                  className="inline-flex items-center tracking-wider w-[280px] h-14 rounded-md bg-[#32727A] mt-10 text-base font-semibold text-white hover:bg-[#081C3A]"
+                  className="inline-flex items-center tracking-wider px-6 py-3 md:w-[280px] md:h-14 rounded-md bg-[#32727A] mt-5 md:mt-10 text-base font-semibold text-white hover:bg-[#081C3A]"
                 >
-                  <p className="mx-auto flex items-center">
+                  <p className="mx-auto flex items-center md:text-3xl text-xs">
                     CHOOSE A DESTINATION
                     <ChevronDown className="ml-2 h-4 w-4" />
 
@@ -454,9 +452,9 @@ export default function home() {
           <div className="mt-6">
             <a
               href="#"
-              className="inline-flex w-full items-center justify-center rounded-md px-8 py-4 bg-white text-sm text-black shadow transition duration-500 hover:scale-105 sm:mx-2 sm:w-auto"
+              className="inline-flex my-5 w-full items-center justify-center rounded-md px-8 py-4 bg-white text-sm text-black shadow transition duration-500 hover:scale-105 sm:w-auto"
             >
-              <span className="mx-2 tracking-wider">CONTACT US</span>
+              <span className="md:mx-2 tracking-wider">CONTACT US</span>
             </a>
             <a
               href="#"
@@ -467,7 +465,7 @@ export default function home() {
           </div>
         </div>
 
-        <div className="relative w-full overflow-hidden">
+        <div className="relative  w-full overflow-hidden">
           {/* Wrapping div for seamless looping */}
           <motion.div
             className="flex"
@@ -483,8 +481,8 @@ export default function home() {
             {/* Render duplicated slides */}
             {duplicatedSlides.map((slide, index) => (
               <div key={index} className="flex-shrink-0">
-                <div className="flex flex-col items-center justify-center h-[341px] w-[341px]">
-                  <div className="relative h-[341px] w-[341px] rounded-md">
+                <div className="flex flex-col items-center justify-center h-40 md:h-[341px] w-40 md:w-[341px]">
+                  <div className="relative h-40 md:h-[341px] w-40 md:w-[341px] rounded-md">
                     <img src={slide.image} alt={`Slide ${index + 1}`} className="max-h-full" />
                   </div>
                 </div>

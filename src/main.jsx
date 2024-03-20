@@ -29,6 +29,7 @@ const router = createBrowserRouter(
       <Route path='location/holiday-homes' element={<Holiday_Homes />} />
       <Route path='location/safari-camps' element={<Safari_Camps />} />
       <Route path='location/safari-lodges' element={<Safari_Lodges />} />
+      <Route path='vacation/clane' element={<Safari_Lodges />} />
 
       <Route path='test' element={<Test />} />
 
