@@ -41,7 +41,7 @@ export default function feature() {
                     className="swiper_containerF"
                 >
                     <SwiperSlide className='swiperslideF'>
-                        <Link to="/about">
+                        <Link to="/location/holiday-homes">
                             <img className='transition ease-in-out duration-700 hover:scale-105' src="./holiday_slide2.jpg" />
                             <div className="cursor-pointer absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
                             <div className="absolute bottom-4 left-4 text-left mx-auto w-full pb-28">
@@ -53,7 +53,7 @@ export default function feature() {
                         </Link>
                     </SwiperSlide>
                     <SwiperSlide className='swiperslideF'>
-                        <Link to="/about">
+                        <Link to="/location/real-estate">
                             <img className='transition ease-in-out duration-700 hover:scale-105' src="./real_slide2.jpg" />
                             <div className="cursor-pointer absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
                             <div className="absolute bottom-4 left-4 text-left mx-auto w-full pb-28">
@@ -65,7 +65,7 @@ export default function feature() {
                         </Link>
                     </SwiperSlide>
                     <SwiperSlide className='swiperslideF'>
-                        <Link to="/about">
+                        <Link to="/location/boutique-hotels">
                             <img className='transition ease-in-out duration-700 hover:scale-105' src="./boutique_slide2.jpg" />
                             <div className="cursor-pointer absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
                             <div className="absolute bottom-4 left-4 text-left mx-auto w-full pb-28">
@@ -77,7 +77,7 @@ export default function feature() {
                         </Link>
                     </SwiperSlide>
                     <SwiperSlide className='swiperslideF'>
-                        <Link to="/about">
+                        <Link to="/location/safari-lodges">
                             <img className='transition ease-in-out duration-700 hover:scale-105' src="./lodges_slide2.png" />
                             <div className="cursor-pointer absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
                             <div className="absolute bottom-4 left-4 text-left mx-auto w-full pb-28">
@@ -89,7 +89,7 @@ export default function feature() {
                         </Link>
                     </SwiperSlide>
                     <SwiperSlide className='swiperslideF'>
-                        <Link to="/about">
+                        <Link to="/location/safari-camps">
                             <img className='transition ease-in-out duration-700 hover:scale-105' src="./camps_slide2.jpg" />
                             <div className="cursor-pointer absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
                             <div className="absolute bottom-4 left-4 text-left mx-auto w-full pb-28">

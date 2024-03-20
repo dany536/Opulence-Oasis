@@ -7,38 +7,38 @@ export default function Footer() {
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
 
-                    <div className="grid grid-cols-2 gap-8 sm:gap-20 sm:grid-cols-5">
+                    <div className="grid grid-cols-5 sm:gap-20">
                         <div>
-                            <h2 className="mb-6 text-md font-semibold text-gray-700 tracking-widest uppercase">
-                                <Link to="/" className="hover:underline">
+                            <h2 className="mb-6 text-md justify-between font-semibold text-gray-700 tracking-widest uppercase">
+                                <Link to="/location/real-estate" className="hover:underline">
                                     real <br /> estate
                                 </Link>
                             </h2>
                         </div>
                         <div>
                             <h2 className="mb-6 text-md font-semibold text-gray-700 tracking-widest uppercase">
-                                <Link to="/" className="hover:underline">
+                                <Link to="/location/safari-lodges" className="hover:underline">
                                     safari <br /> lodges
                                 </Link>
                             </h2>
                         </div>
                         <div>
                             <h2 className="mb-6 text-md font-semibold text-gray-700 tracking-widest uppercase">
-                                <Link to="/" className="hover:underline">
+                                <Link to="/location/boutique-hotels" className="hover:underline">
                                     boutique <br /> hotels
                                 </Link>
                             </h2>
                         </div>
                         <div>
                             <h2 className="mb-6 text-md font-semibold text-gray-700 tracking-widest uppercase">
-                                <Link to="/" className="hover:underline">
+                                <Link to="/location/holiday-homes" className="hover:underline">
                                     holiday <br /> homes
                                 </Link>
                             </h2>
                         </div>
                         <div>
                             <h2 className="mb-6 text-md font-semibold text-gray-700 tracking-widest uppercase">
-                                <Link to="/" className="hover:underline">
+                                <Link to="/location/safari-camps" className="hover:underline">
                                     safari <br /> camps
                                 </Link>
                             </h2>
@@ -46,9 +46,9 @@ export default function Footer() {
                     </div>
 
 
-                    <div className="mb-6 md:mb-0">
+                    <div className="item-center">
                         <Link to="/" className="flex items-center">
-                            <h1 className="text-center text-3xl font-serif">OPULENCE OASIS</h1>
+                            <h1 className="text-center md:text-3xl text-2xl font-serif">OPULENCE OASIS</h1>
                         </Link>
                     </div>
 
@@ -59,7 +59,7 @@ export default function Footer() {
                     <span className="text-sm text-gray-500 sm:text-center">
                         © 2024 OPULENCE OASIS
                     </span>
-                    <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+                    <div className="flex space-x-5 sm:justify-center sm:mt-0">
                         <span className="text-sm text-gray-500 sm:text-center">
                             Design & Developed By Deepankar Sahu
                         </span>

@@ -494,7 +494,7 @@ export default function home() {
         </div>
       </section>
 
-      <section>
+      <section className='sm:flex'>
         <div className='p-10 lg:p-20'>
           <div className="grid lg:grid-cols-2 gap-10">
             <div className="mx-auto max-w-lg h-max bg-[#F7F8FC]" style={{ position: "sticky", top: "70px" }}>
@@ -558,26 +558,24 @@ export default function home() {
       </section>
 
       <section>
-
         <div className="flex max-w-7xl mx-auto gap-10 flex-col md:flex-row p-5">
-
-          <div className="lg:mb-28 max-w-7xl lg:ms-28 ">
+          <div className="lg:mb-28 mb-7 max-w-7xl lg:ms-28 ">
             <img src="./balloon2.jpeg" alt="Ballon" className="h-[90vh] w-full rounded-md object-cover items-center mx-auto" />
-
-            <div className='absolute bg-white -mt-44 rounded-xl max-w-md p-5 ms-6 lg:ms-12 shadow-lg'>
-              <h1 className='text-black text-3xl text-center font-bold subpixel-antialiased p-4'>Hot Air Ballon Services</h1>
-              <p className='text-slate-500 text-xl p-5'>A unique and exhilarating experience. With highly trained pilots and expert guides, Opulence Oasis ensures a safe and unforgettable journey.</p>
+            <div className='absolute bg-white -mt-44 rounded-xl lg:max-w-md max-w-sm md:p-5 p-3 ms-6 lg:ms-12 shadow-lg'>
+              <h1 className='text-black md:text-3xl text-2xl text-center font-bold subpixel-antialiased md:p-4 pt-2'>Hot Air Ballon Services</h1>
+              <p className='text-slate-500 md:text-xl text-md p-5'>A unique and exhilarating experience. With highly trained pilots and expert guides, Opulence Oasis ensures a safe and unforgettable journey.</p>
+              <button className='border-2 text-xs tracking-widest rounded-md ms-3 mt-0 p-2'>READ MORE</button>
             </div>
           </div>
 
-          <div className="p-2 max-w-md w-full">
+          <div className="p-2 md:max-w-md  w-full">
             <p className='tracking-widest text-gray-700 font-semibold'>Experience <hr /></p>
 
-            <div className="flex  h-max m-7 w-full flex-col rounded-md border md:flex-row hover:shadow-lg transition ease-in-out duration-700 hover:scale-105">
-              <div className="h-full w-full md:h-[100px] md:w-[124px] p-1">
+            <div className="h-max md:m-7 m-5 ms-0 w-full inline-flex rounded-md border md:flex-row hover:shadow-lg transition ease-in-out duration-700 hover:scale-105">
+              <div className="lg:h-[100px] lg:w-[124px] h-[110px] w-[124px]">
                 <img
-                  src="./night.png"
-                  alt="Night life"
+                  src="night.png"
+                  alt="Game"
                   className="h-full w-full rounded-md object-cover"
                 />
               </div>
@@ -589,11 +587,12 @@ export default function home() {
                 </div>
               </div>
             </div>
-            <div className="flex  h-max m-7 w-full flex-col rounded-md border md:flex-row hover:shadow-lg transition ease-in-out duration-700 hover:scale-105">
-              <div className="h-full w-full md:h-[100px] md:w-[124px] p-1">
+
+            <div className="h-max md:m-7 m-5 ms-0 mt-0 w-full inline-flex rounded-md border md:flex-row hover:shadow-lg transition ease-in-out duration-700 hover:scale-105">
+              <div className="lg:h-[100px] lg:w-[124px] h-[110px] w-[124px]">
                 <img
                   src="fine.png"
-                  alt="Fine Dining"
+                  alt="Game"
                   className="h-full w-full rounded-md object-cover"
                 />
               </div>
@@ -605,11 +604,12 @@ export default function home() {
                 </div>
               </div>
             </div>
-            <div className="flex  h-max m-7 w-full flex-col rounded-md border md:flex-row hover:shadow-lg transition ease-in-out duration-700 hover:scale-105">
-              <div className="h-full w-full md:h-[100px] md:w-[124px] p-1">
+
+            <div className="h-max md:m-7 m-5 ms-0 mt-0 w-full inline-flex rounded-md border md:flex-row hover:shadow-lg transition ease-in-out duration-700 hover:scale-105">
+              <div className="lg:h-[100px] lg:w-[124px] h-[110px] w-[124px]">
                 <img
                   src="car.png"
-                  alt="Car"
+                  alt="Game"
                   className="h-full w-full rounded-md object-cover"
                 />
               </div>
@@ -621,8 +621,9 @@ export default function home() {
                 </div>
               </div>
             </div>
-            <div className="flex  h-max m-7 w-full flex-col rounded-md border md:flex-row hover:shadow-lg transition ease-in-out duration-700 hover:scale-105">
-              <div className="h-full w-full md:h-[100px] md:w-[124px]">
+
+            <div className="h-max md:m-7 m-5 ms-0 mt-0 w-full inline-flex rounded-md border md:flex-row hover:shadow-lg transition ease-in-out duration-700 hover:scale-105">
+              <div className="lg:h-[100px] lg:w-[124px] h-[110px] w-[124px]">
                 <img
                   src="game.png"
                   alt="Game"
@@ -637,6 +638,7 @@ export default function home() {
                 </div>
               </div>
             </div>
+
           </div>
         </div>
 
