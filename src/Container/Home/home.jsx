@@ -207,7 +207,7 @@ export default function home() {
               WHY WE'RE DIFFERENT <hr />
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:mt-12 xl:grid-cols-3">
+            <div className="grid grid-cols-1 md:grid-cols-3 xl:mt-12 xl:grid-cols-3">
 
               <div className="p-8 bg-white rounded-lg space-y-3 transition duration-500 ease-in-out hover:shadow-lg hover:scale-105">
                 <span className="inline-block w-[60px] h-[60px] rounded-full bg-gray-100 p-5 text-black">
@@ -244,8 +244,6 @@ export default function home() {
               POPULAR OPULENCE GASIS VACATIONS <hr />
             </p>
           </div>
-
-
         </div>
       </section>
 
@@ -253,11 +251,11 @@ export default function home() {
 
         <div className="bg-white mx-auto -mt-20 max-w-6xl sm:px-6 p-8">
 
-          <div className="flex justify-between h-14">
-            <p className="mx-auto btn cursor-pointer" onClick={travelfn}>TRAVEL</p>
-            <p className="mx-auto btn cursor-pointer" onClick={realEstatefn}>REAL ESTATE</p>
-            <p className="mx-auto btn cursor-pointer" onClick={conciergefn}>CONCIERGE</p>
-            <p className="mx-auto btn cursor-pointer" onClick={safarifn}>SAFARI CAMPS</p>
+          <div className="grid grid-cols-2 md:grid-cols-4 justify-between h-14">
+            <p className="mx-auto btn cursor-pointer hover:underline" onClick={travelfn}>TRAVEL</p>
+            <p className="mx-auto btn cursor-pointer hover:underline" onClick={realEstatefn}>REAL ESTATE</p>
+            <p className="mx-auto btn cursor-pointer hover:underline" onClick={conciergefn}>CONCIERGE</p>
+            <p className="mx-auto btn cursor-pointer hover:underline" onClick={safarifn}>SAFARI CAMPS</p>
           </div>
 
           <hr className='p-5' />
@@ -492,11 +490,11 @@ export default function home() {
         </div>
       </section>
 
-      <section className='sm:flex'>
+      <section>
         <div className='p-10 lg:p-20'>
           <div className="grid lg:grid-cols-2 gap-10">
             <div className="mx-auto max-w-lg h-max bg-[#F7F8FC]" style={{ position: "sticky", top: "70px" }}>
-              <div className="rounded-2xl w-full p-7 border-2">
+              <div className="rounded-2xl w-full sm:p-7 p-3 border-2">
                 <img
                   src="./balloon1.jpg"
                   alt="Air Ballon"
@@ -506,15 +504,15 @@ export default function home() {
                   <h1 className='tracking-widest text-sm py-4'>
                     GET STARTED TODAY
                   </h1>
-                  <h1 className="inline-flex text-4xl font-semibold py-2">
+                  <h1 className="inline-flex text-3xl sm:text-4xl font-semibold py-2">
                     We make dreams into reality on a daily basis &nbsp;
                   </h1>
-                  <p className="my-3 text-xl text-gray-600">
+                  <p className="my-3 text-lg md:text-xl text-gray-600">
                     We're passionate about what we do, we know our priorities inside and out and provide unparalleled expertise in pairing guests with their ideal safari destination or holiday home.
                   </p>
                   <button
                     type="button"
-                    className="w-1/2 mt-5 border-2 rounded-md px-2 py-4 text-sm font-base text-white bg-[#32727A] transition ease-in-out duration-500 hover:scale-105 hover:bg-[#081C3A] ">
+                    className="sm:w-1/2 mt-5 border-2 rounded-md sm:px-2 px-3 py-3 sm:py-4 text-xs sm:text-sm font-base text-white bg-[#32727A] transition ease-in-out duration-500 hover:scale-105 hover:bg-[#081C3A] ">
                     CONTACT US TODAY
                   </button>
                 </div>
@@ -559,9 +557,9 @@ export default function home() {
         <div className="flex max-w-7xl mx-auto gap-10 flex-col md:flex-row p-5">
           <div className="lg:mb-28 mb-7 max-w-7xl lg:ms-28 ">
             <img src="./balloon2.jpeg" alt="Ballon" className="h-[90vh] w-full rounded-md object-cover items-center mx-auto" />
-            <div className='absolute bg-white -mt-44 rounded-xl lg:max-w-md max-w-sm md:p-5 p-3 ms-6 lg:ms-12 shadow-lg'>
+            <div className='absolute bg-white -mt-44 rounded-xl lg:max-w-md max-w-xs md:p-5 p-3 ms-9 lg:ms-6 shadow-lg'>
               <h1 className='text-black md:text-3xl text-2xl text-center font-bold subpixel-antialiased md:p-4 pt-2'>Hot Air Ballon Services</h1>
-              <p className='text-slate-500 md:text-xl text-md p-5'>A unique and exhilarating experience. With highly trained pilots and expert guides, Opulence Oasis ensures a safe and unforgettable journey.</p>
+              <p className='text-slate-500 md:text-xl text-sm p-5'>A unique and exhilarating experience. With highly trained pilots and expert guides, Opulence Oasis ensures a safe and unforgettable journey.</p>
               <button className='border-2 text-xs tracking-widest rounded-md ms-3 mt-0 p-2'>READ MORE</button>
             </div>
           </div>
