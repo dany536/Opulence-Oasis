@@ -45,8 +45,6 @@ body {
   font-size: 50%;
   scroll-behavior: smooth;
   zoom: 0.68;
-
-
 }
 
 .swiper_containerF {
@@ -61,6 +59,25 @@ body {
   height: 42rem;
   position: relative;
 }
+
+@media (max-width: 500px) {
+  .containerF {
+    /* padding: 1rem 2rem;
+    font-size: 50%;
+    scroll-behavior: smooth; */
+    zoom: 0.40;
+  }
+
+  .swiper_containerF {
+    height: 45rem;
+    width: 70rem;
+    padding: 0rem 1rem;
+    position: relative;
+  }
+  
+  
+}
+
 
 /* @media (max-width: 500px) {
   .swiper_container {
