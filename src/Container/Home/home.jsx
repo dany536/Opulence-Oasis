@@ -86,11 +86,11 @@ export default function home() {
           }}
           navigation={true}
           modules={[Autoplay, Navigation]}
-          className="mySwiper h-max sm:h-[90vh]"
+          className="mySwiper  bg-slate-600 sm:h-[90vh]"
         >
           <SwiperSlide >
             <Link to="/vacation/clane">
-              <img className="object-fill" src='./d1.png' />
+              <img className="object-fill h-[250px] sm:h-[90vh] w-full" src='./d1.png' />
               <div className="cursor-pointer absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
               <div className="absolute bottom-0 right-0">
                 <p className="tracking-widest text-white text-xs md:text-sm md:p-4 p-2 ms-5 md:ms-10">POPULAR LOCATION <hr /></p>
@@ -110,7 +110,7 @@ export default function home() {
 
           <SwiperSlide >
             <Link to="/vacation/clane">
-              <img className="object-fill" src='./d2.png' />
+              <img className="object-fill h-[250px] sm:h-[90vh] w-full" src='./d2.png' />
               <div className="cursor-pointer absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
               <div className="absolute bottom-0 right-0">
                 <p className="tracking-widest text-white text-xs md:text-sm md:p-4 p-2 ms-5 md:ms-10">POPULAR LOCATION <hr /></p>
@@ -130,7 +130,7 @@ export default function home() {
 
           <SwiperSlide >
             <Link to="/vacation/clane">
-              <img className="object-fill" src='./d3.png' />
+              <img className="object-fill h-[250px] sm:h-[90vh] w-full" src='./d3.png' />
               <div className="cursor-pointer absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
               <div className="absolute bottom-0 right-0">
                 <p className="tracking-widest text-white text-xs md:text-sm md:p-4 p-2 ms-5 md:ms-10">POPULAR LOCATION <hr /></p>
