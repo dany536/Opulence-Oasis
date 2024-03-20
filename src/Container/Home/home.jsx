@@ -86,7 +86,7 @@ export default function home() {
           }}
           navigation={true}
           modules={[Autoplay, Navigation]}
-          className="mySwiper h-max md:h-[90vh]"
+          className="mySwiper h-max sm:h-[90vh]"
         >
           <SwiperSlide >
             <Link to="/vacation/clane">
