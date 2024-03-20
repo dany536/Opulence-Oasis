@@ -13,7 +13,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-//import './styles.css';
+import './home.css';
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
@@ -177,7 +177,6 @@ export default function home() {
                 <p className="mt-4 max-w-xl text-sm md:text-base leading-relaxed text-gray-600">
                   Your gateway to luxury real estate and travel in Kenya's most sought-after destinations.
                 </p>
-
                 <button
                   type="button"
                   className="inline-flex items-center tracking-wider px-6 py-3 md:px-4 md:w-[280px] md:h-14 rounded-md bg-[#32727A] mt-5 md:mt-10 text-base font-semibold text-white hover:bg-[#081C3A]"
@@ -185,11 +184,8 @@ export default function home() {
                   <p className="mx-auto flex items-center md:text-lg text-xs">
                     CHOOSE A DESTINATION
                     <ChevronDown className="ml-2 h-4 w-4" />
-
                   </p>
                 </button>
-
-
               </div>
             </div>
 
@@ -218,7 +214,6 @@ export default function home() {
                   We offer an exquistite range of experiences, ensuring every moment of your journey is nothing short of extraordinary
                 </p>
               </div>
-
               <div className="sm:p-8 p-5 bg-white rounded-lg space-y-3 transition duration-500 ease-in-out hover:shadow-lg hover:scale-105">
                 <span className="inline-block w-[60px] h-[60px]  rounded-full bg-gray-100 p-5 text-black">
                   <img src="https://assets-global.website-files.com/6583d18e043fa866285fce1c/6583d18e043fa866285fcee1_Deals.svg" />
@@ -228,7 +223,6 @@ export default function home() {
                   An exclusive collection of Kenaya's most prestigious properties available for rent & sale offering comfort
                 </p>
               </div>
-
               <div className="sm:p-8 p-5 bg-white rounded-lg space-y-3 transition duration-500 ease-in-out hover:shadow-lg hover:scale-105">
                 <span className="inline-block w-[60px] h-[60px]  rounded-full bg-gray-100 p-5 text-black">
                   <img src="https://assets-global.website-files.com/6583d18e043fa866285fce1c/6583d18e043fa866285fcf06_Case.svg" />
@@ -238,9 +232,7 @@ export default function home() {
                   Meticulous collection of Africa's most exclusive boutique hotels, safari lodes & camps & holiday homes
                 </p>
               </div>
-
             </div>
-
             <p className="my-10 text-sm leading-relaxed text-gray-800">
               POPULAR OPULENCE GASIS VACATIONS <hr />
             </p>
@@ -491,10 +483,10 @@ export default function home() {
         </div>
       </section>
 
-      <section>
+      <section className='hiddenOne'>
         <div className='p-10 lg:p-20'>
           <div className="grid lg:grid-cols-2 gap-10">
-            <div className="mx-auto max-w-lg h-max bg-[#F7F8FC]" style={{ position: "sticky", top: "70px" }}>
+            <div className="mx-auto max-w-lg h-max bg-[#F7F8FC] balloon-hide" style={{ position: "sticky", top: "70px" }}>
               <div className="rounded-2xl w-full sm:p-7 p-3 border-2">
                 <img
                   src="./balloon1.jpg"
@@ -548,6 +540,76 @@ export default function home() {
                     We’re here to elevate your travel and lifestyle aspirations in Africa, transcending expectations and crafting unforgettable moments that linger in the heart and mind. We invite you to embark on a journey with us, where every detail is meticulously tailored to reflect your unique desires and redefine luxury in its purest form.
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='sm:hidden'>
+        <div className='p-10 lg:p-20'>
+          <div className="grid lg:grid-cols-2 gap-10">
+
+            <div className="mx-auto max-w-lg h-max bg-[#F7F8FC]">
+              <div className="rounded-2xl w-full sm:p-7 p-3 border-2">
+                <img
+                  src="./balloon1.jpg"
+                  alt="Air Ballon"
+                  className="rounded-2xl object-cover "
+                />
+                <div className="p-4">
+                  <h1 className='tracking-widest text-sm py-4'>
+                    GET STARTED TODAY
+                  </h1>
+                  <h1 className="inline-flex text-3xl sm:text-4xl font-semibold py-2">
+                    We make dreams into reality on a daily basis &nbsp;
+                  </h1>
+                  <p className="my-3 text-lg md:text-xl text-gray-600">
+                    We're passionate about what we do, we know our priorities inside and out and provide unparalleled expertise in pairing guests with their ideal safari destination or holiday home.
+                  </p>
+                  <button
+                    type="button"
+                    className="sm:w-1/2 mt-5 border-2 rounded-md sm:px-2 px-3 py-3 sm:py-4 text-xs sm:text-sm font-base text-white bg-[#32727A] transition ease-in-out duration-500 hover:scale-105 hover:bg-[#081C3A] ">
+                    CONTACT US TODAY
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <p className="py-2 text-sm leading-relaxed text-gray-800">
+                WE ARE OPULENCE OASIS <hr />
+              </p>
+              <div className="w-full h-max ">
+
+                <div className="p-5 m-1 my-3 bg-white rounded-md space-y-3 transition duration-500 ease-in-out hover:shadow-lg hover:scale-105 border-2">
+                  <h1 className="py-1 text-lg font-semibold capitalize text-gray-700">Masters of Luxury travel & living</h1>
+                  <p className="text-sm text-gray-500">
+                    Based in Nairobi Kenya, we are a distinguished purveyor of unparalleled luxury, offering a harmonious blend of exquisite travel experiences, bespoke concierge services, and exclusive real estate opportunity in Africa.
+                  </p>
+                </div>
+
+                <div className="p-5 m-1 my-3 bg-white rounded-md space-y-3 transition duration-500 ease-in-out hover:shadow-lg hover:scale-105 border-2">
+                  <h1 className="py-1 text-lg font-semibold capitalize text-gray-700">Redefining Luxury</h1>
+                  <p className="text-sm text-gray-500">
+                    We believe that luxury is not just a material possession or an extravagant experience; it's a state of mind, a way of life. Our philosophy is centered around creating extraordinary experiences that transcend the boundaries of traditional luxury.
+                  </p>
+                </div>
+
+                <div className="p-5 m-1 my-3 bg-white rounded-md space-y-3 transition duration-500 ease-in-out hover:shadow-lg hover:scale-105 border-2">
+                  <h1 className="py-1 text-lg font-semibold capitalize text-gray-700">Dedicated to excellence</h1>
+                  <p className="text-sm text-gray-500">
+                    Whether it’s a captivating safari expedition or a lavish beach escape, our meticulous attention to detail ensures that every moment is steeped in luxury and wonder. In addition to our travel and concierge offerings, Opulence Oasis sets the stage for redefined living through our exclusive real estate services in Kenya. Our portfolio of luxury properties showcases the epitome of elegance and sophistication, presenting a rare opportunity to own a piece of Africa’s most coveted destinations.
+                  </p>
+                </div>
+
+                <div className="p-5 m-1 my-3 bg-white rounded-md space-y-3 transition duration-500 ease-in-out hover:shadow-lg hover:scale-105 border-2">
+                  <h1 className="py-1 text-lg font-semibold capitalize text-gray-700">Innovation</h1>
+                  <p className="text-sm text-gray-500">
+                    We’re here to elevate your travel and lifestyle aspirations in Africa, transcending expectations and crafting unforgettable moments that linger in the heart and mind. We invite you to embark on a journey with us, where every detail is meticulously tailored to reflect your unique desires and redefine luxury in its purest form.
+                  </p>
+                </div>
+
               </div>
             </div>
           </div>
