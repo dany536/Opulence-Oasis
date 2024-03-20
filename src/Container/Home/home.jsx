@@ -571,7 +571,7 @@ export default function home() {
           <div className="p-2 md:max-w-md  w-full">
             <p className='tracking-widest text-gray-700 font-semibold'>Experience <hr /></p>
 
-            <div className="h-max md:m-7 m-5 ms-0 w-full inline-flex rounded-md border md:flex-row hover:shadow-lg transition ease-in-out duration-700 hover:scale-105">
+            <div className="h-max md:m-7 md:mb-3 m-5 ms-0 w-full inline-flex rounded-md border md:flex-row hover:shadow-lg transition ease-in-out duration-700 hover:scale-105">
               <div className="lg:h-[100px] lg:w-[124px] h-[110px] w-[124px]">
                 <img
                   src="night.png"
@@ -588,7 +588,7 @@ export default function home() {
               </div>
             </div>
 
-            <div className="h-max md:m-7 m-5 ms-0 mt-0 w-full inline-flex rounded-md border md:flex-row hover:shadow-lg transition ease-in-out duration-700 hover:scale-105">
+            <div className="h-max md:m-7 md:my-3 m-5 ms-0 mt-0 w-full inline-flex rounded-md border md:flex-row hover:shadow-lg transition ease-in-out duration-700 hover:scale-105">
               <div className="lg:h-[100px] lg:w-[124px] h-[110px] w-[124px]">
                 <img
                   src="fine.png"
@@ -605,7 +605,7 @@ export default function home() {
               </div>
             </div>
 
-            <div className="h-max md:m-7 m-5 ms-0 mt-0 w-full inline-flex rounded-md border md:flex-row hover:shadow-lg transition ease-in-out duration-700 hover:scale-105">
+            <div className="h-max md:m-7 md:my-3 m-5 ms-0 mt-0 w-full inline-flex rounded-md border md:flex-row hover:shadow-lg transition ease-in-out duration-700 hover:scale-105">
               <div className="lg:h-[100px] lg:w-[124px] h-[110px] w-[124px]">
                 <img
                   src="car.png"
@@ -622,7 +622,7 @@ export default function home() {
               </div>
             </div>
 
-            <div className="h-max md:m-7 m-5 ms-0 mt-0 w-full inline-flex rounded-md border md:flex-row hover:shadow-lg transition ease-in-out duration-700 hover:scale-105">
+            <div className="h-max md:m-7 md:my-3 m-5 ms-0 mt-0 w-full inline-flex rounded-md border md:flex-row hover:shadow-lg transition ease-in-out duration-700 hover:scale-105">
               <div className="lg:h-[100px] lg:w-[124px] h-[110px] w-[124px]">
                 <img
                   src="game.png"
