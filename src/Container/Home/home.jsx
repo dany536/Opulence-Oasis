@@ -180,9 +180,9 @@ export default function home() {
 
                 <button
                   type="button"
-                  className="inline-flex items-center tracking-wider px-6 py-3 md:w-[280px] md:h-14 rounded-md bg-[#32727A] mt-5 md:mt-10 text-base font-semibold text-white hover:bg-[#081C3A]"
+                  className="inline-flex items-center tracking-wider px-6 py-3 md:px-4 md:w-[280px] md:h-14 rounded-md bg-[#32727A] mt-5 md:mt-10 text-base font-semibold text-white hover:bg-[#081C3A]"
                 >
-                  <p className="mx-auto flex items-center md:text-3xl text-xs">
+                  <p className="mx-auto flex items-center md:text-lg text-xs">
                     CHOOSE A DESTINATION
                     <ChevronDown className="ml-2 h-4 w-4" />
 
