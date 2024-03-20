@@ -18,7 +18,7 @@ import { Autoplay, EffectCoverflow, Navigation } from 'swiper/modules';
 export default function feature() {
     return (
         <>
-            <div className="containerF">
+            <div className="containerF mx-auto">
                 <Swiper
                     navigation={true}
                     effect={'coverflow'}
