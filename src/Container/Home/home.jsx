@@ -96,7 +96,7 @@ export default function home() {
                 <p className="tracking-widest text-white text-xs md:text-sm md:p-4 p-2 ms-5 md:ms-10">POPULAR LOCATION <hr /></p>
                 <div className="flex flex-row gap-1">
                   <div className="bg-white rounded-lg rounded-b-none rounded-e-none">
-                  <p className='p-2 md:p-5'> <MoveRight className='h-3 md:h-3 ' /></p><hr />
+                    <p className='p-2 md:p-5'> <MoveRight className='h-3 md:h-3 ' /></p><hr />
                     <p className='p-2 md:p-5'> <MoveLeft className='h-3 md:h-3' /></p>
                   </div>
                   <div className="p-2 md:p-5 pb-1 md:pb-12 bg-white mx-auto md:w-[450px] text-black">
@@ -116,7 +116,7 @@ export default function home() {
                 <p className="tracking-widest text-white text-xs md:text-sm md:p-4 p-2 ms-5 md:ms-10">POPULAR LOCATION <hr /></p>
                 <div className="flex flex-row gap-1">
                   <div className="bg-white rounded-lg rounded-b-none rounded-e-none">
-                  <p className='p-2 md:p-5'> <MoveRight className='h-3 md:h-3 ' /></p><hr />
+                    <p className='p-2 md:p-5'> <MoveRight className='h-3 md:h-3 ' /></p><hr />
                     <p className='p-2 md:p-5'> <MoveLeft className='h-3 md:h-3' /></p>
                   </div>
                   <div className="p-2 md:p-5 pb-1 md:pb-12 bg-white mx-auto w-[200px] md:w-[450px] text-black">
@@ -136,7 +136,7 @@ export default function home() {
                 <p className="tracking-widest text-white text-xs md:text-sm md:p-4 p-2 ms-5 md:ms-10">POPULAR LOCATION <hr /></p>
                 <div className="flex flex-row gap-1">
                   <div className="bg-white rounded-lg rounded-b-none rounded-e-none">
-                  <p className='p-2 md:p-5'> <MoveRight className='h-3 md:h-3 ' /></p><hr />
+                    <p className='p-2 md:p-5'> <MoveRight className='h-3 md:h-3 ' /></p><hr />
                     <p className='p-2 md:p-5'> <MoveLeft className='h-3 md:h-3' /></p>
                   </div>
                   <div className="p-2 md:p-5 pb-1 md:pb-12 bg-white mx-auto md:w-[450px] text-black">
@@ -209,35 +209,36 @@ export default function home() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 xl:mt-12 xl:grid-cols-3">
 
-              <div className="p-8 bg-white rounded-lg space-y-3 transition duration-500 ease-in-out hover:shadow-lg hover:scale-105">
-                <span className="inline-block w-[60px] h-[60px] rounded-full bg-gray-100 p-5 text-black">
+              <div className="sm:p-8 p-5 bg-white rounded-lg space-y-3 transition duration-500 ease-in-out hover:shadow-lg hover:scale-105">
+                <span className="inline-block w-[60px] h-[60px]  rounded-full bg-gray-100 p-5 text-black">
                   <img src="https://assets-global.website-files.com/6583d18e043fa866285fce1c/6583d18e043fa866285fcef1_Passport.svg" alt="" />
                 </span>
-                <h1 className="pt-5 text-xl font-semibold capitalize text-black">Concierge</h1>
-                <p className="text-basic text-gray-500">
+                <h1 className="pt-2 sm:pt-5 sm:text-xl text-md font-semibold capitalize text-black">Concierge</h1>
+                <p className="sm:text-md text-sm text-gray-500">
                   We offer an exquistite range of experiences, ensuring every moment of your journey is nothing short of extraordinary
                 </p>
               </div>
 
-              <div className="p-8 bg-white rounded-lg space-y-3 transition duration-500 ease-in-out hover:shadow-lg hover:scale-105">
-                <span className="inline-block w-[60px] h-[60px] rounded-full bg-gray-100 p-5 text-black">
+              <div className="sm:p-8 p-5 bg-white rounded-lg space-y-3 transition duration-500 ease-in-out hover:shadow-lg hover:scale-105">
+                <span className="inline-block w-[60px] h-[60px]  rounded-full bg-gray-100 p-5 text-black">
                   <img src="https://assets-global.website-files.com/6583d18e043fa866285fce1c/6583d18e043fa866285fcee1_Deals.svg" />
                 </span>
-                <h1 className="pt-5 text-xl font-semibold capitalize text-black">Real Estate</h1>
-                <p className="text-basic text-gray-500">
+                <h1 className="pt-2 sm:pt-5 sm:text-xl text-md font-semibold capitalize text-black">Real Estate</h1>
+                <p className="sm:text-md text-sm text-gray-500">
                   An exclusive collection of Kenaya's most prestigious properties available for rent & sale offering comfort
                 </p>
               </div>
 
-              <div className="p-8 bg-white rounded-lg space-y-3 transition duration-500 ease-in-out hover:shadow-lg hover:scale-105">
-                <span className="inline-block w-[60px] h-[60px] rounded-full bg-gray-100 p-5 text-black">
+              <div className="sm:p-8 p-5 bg-white rounded-lg space-y-3 transition duration-500 ease-in-out hover:shadow-lg hover:scale-105">
+                <span className="inline-block w-[60px] h-[60px]  rounded-full bg-gray-100 p-5 text-black">
                   <img src="https://assets-global.website-files.com/6583d18e043fa866285fce1c/6583d18e043fa866285fcf06_Case.svg" />
                 </span>
-                <h1 className="pt-5 text-xl font-semibold capitalize text-black">Travel</h1>
-                <p className="text-basic text-gray-500">
+                <h1 className="pt-2 sm:pt-5 sm:text-xl text-md font-semibold capitalize text-black">Travel</h1>
+                <p className="sm:text-md text-sm text-gray-500">
                   Meticulous collection of Africa's most exclusive boutique hotels, safari lodes & camps & holiday homes
                 </p>
               </div>
+
             </div>
 
             <p className="my-10 text-sm leading-relaxed text-gray-800">
